@@ -1,5 +1,7 @@
 # Awesome Rex [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+![awesome-rex: 21 Rex projects in eight sections](assets/preview.png)
+
 A curated list of tools, plugins, and integrations for Rex, the terminal workspace by Superlogical. Rex is in closed beta, so most of these are early and move fast.
 
 Entries marked *demo* link to a GIF, video, or screenshot from the project.
