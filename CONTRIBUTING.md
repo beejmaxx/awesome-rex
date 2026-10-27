@@ -13,3 +13,7 @@ Please include only projects that:
 - have a README explaining what they do and how to install them.
 
 Keep descriptions factual, and list new entries at the end of their section.
+
+## Maintaining
+
+`scripts/new-from-export.py` lists GitHub repositories mentioned in a Discord channel export (DiscordChatExporter JSON) that aren't in the list yet. CI runs `awesome-lint` on every change and checks all links every Monday.
