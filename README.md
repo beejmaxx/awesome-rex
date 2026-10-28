@@ -26,6 +26,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rexurrect](https://github.com/cemcatik/rexurrect) - Saves sessions and recreates them after a crash, update, or reboot, like tmux-resurrect. Keeps scrollback.
 - [rexkit](https://github.com/snipeship/rexkit) - Session manager that can create, rename, and close sessions, plus a file picker, tmux/zellij-style keybindings, and scrollback in Neovim. ([demo](https://github.com/user-attachments/assets/d1d325c4-4cff-4e40-b755-0541d977c1b7))
 - [raycast-rex-sessions](https://github.com/esttorhe/raycast-rex-sessions) - Raycast extension for switching Rex sessions, sesh entries, and zoxide directories.
+- [rex-sessionizer](https://github.com/haxybaxy/rex-sessionizer) - Floating fzf picker over the directories under your work directory that switches to a session per project, created on demand, a port of [ThePrimeagen's tmux-sessionizer](https://github.com/theprimeagen/tmux-sessionizer). In a nested repo it lists the sub-projects first. ([demo](https://github.com/haxybaxy/rex-sessionizer#readme))
 
 ## Coding agents
 
