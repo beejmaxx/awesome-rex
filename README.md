@@ -54,6 +54,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 
 - [rexdiff](https://github.com/rednafi/rexdiff) - Review what a coding agent changed without leaving Rex, in the style of herdr-reviewr. ([demo](https://github.com/user-attachments/assets/d56af0f9-e1ff-422d-b0e7-0e5afe3320ae))
 - [reviewr.nvim](https://github.com/paul-enz/reviewr.nvim) - Review Git diffs in Neovim and send line comments to an agent running in Rex, tmux, or WezTerm. ([demo](https://github.com/paul-enz/reviewr.nvim/blob/main/assets/demo.gif))
+- [rex.nvim](https://github.com/rawnly/rex.nvim) - Annotate code in Neovim and send comments or file references to a coding agent in a Rex session. ([demo](https://github.com/user-attachments/assets/47bc945d-6377-4df5-80a6-93bd219fd1b6))
 
 ## Workflow utilities
 
