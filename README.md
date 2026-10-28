@@ -58,6 +58,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rex-image-paste](https://github.com/pablasso/rex-image-paste) - Paste images into remote hosts by copying them to a temporary file there (`Cmd+Shift+V`).
 - [rex-nobeta-icon](https://github.com/Stanzilla/rex-nobeta-icon) - Replaces the beta app icon with the plain one. Re-run it after each update.
 - [Tab Numbers for Rex](https://github.com/manishprivet/.dotfiles/tree/main/.config/rex/extensions/tab-numbers) - Numbers tab titles to match indexed keyboard shortcuts on macOS.
+- [rex-worktrunk](https://github.com/haxybaxy/rex-worktrunk) - Git worktree pickers driven by worktrunk: switch to or create a worktree from one key and remove one from another, with a session per worktree. Ported from herdr-worktrunk. ([demo](https://github.com/haxybaxy/rex-worktrunk#readme))
 
 ## Frameworks
 
