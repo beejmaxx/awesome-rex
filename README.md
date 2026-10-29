@@ -27,6 +27,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rexkit](https://github.com/snipeship/rexkit) - Session manager that can create, rename, and close sessions, plus a file picker, tmux/zellij-style keybindings, and scrollback in Neovim. ([demo](https://github.com/user-attachments/assets/d1d325c4-4cff-4e40-b755-0541d977c1b7))
 - [raycast-rex-sessions](https://github.com/esttorhe/raycast-rex-sessions) - Raycast extension for switching Rex sessions, sesh entries, and zoxide directories.
 - [rex-sessionizer](https://github.com/haxybaxy/rex-sessionizer) - Floating fzf project picker that switches to a directory's Rex session, creating it if needed. Supports nested project directories.
+- [RexPocket](https://github.com/leizhiyuan/rexpocket) - Android client for browsing Rex sessions, tabs, and panes, reading terminal output, and sending input through the server API. Build the APK from source.
 
 ## Coding agents
 
@@ -66,6 +67,8 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [Rex Markdown for Pi](https://github.com/jal-co/jalco-dotfiles/tree/main/tools/rex-markdown) - Opens local Markdown links from Pi in a terminal-browser preview beside the originating Rex pane on macOS.
 - [logi-rex](https://github.com/aruniverse/logi-rex) - Maps Logitech controls to Rex tabs, panes, and sessions through OpenLogi configuration exports and Rex keybindings. Includes an experimental Logi Options+ bridge.
 - [RAFT](https://github.com/theboxer/raft) - Nine floating terminal slots per session, tab, or pane, with a searchable manager and output preview. Hiding terminals keeps their processes running.
+- [sshpick](https://github.com/calvindotnow/sshpick) - Floating SSH host picker that opens connections in named Rex tabs, grouped into sessions by SSH config tags. Supports adding and deleting hosts.
+- [Courier](https://github.com/abhi-reducto/courier) - macOS menu bar app that transfers files over SSH to Tailscale machines and pastes their remote paths into coding agent panes in Rex.
 
 ## Frameworks
 
