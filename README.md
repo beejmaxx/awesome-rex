@@ -28,6 +28,8 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [raycast-rex-sessions](https://github.com/esttorhe/raycast-rex-sessions) - Raycast extension for switching Rex sessions, sesh entries, and zoxide directories.
 - [rex-sessionizer](https://github.com/haxybaxy/rex-sessionizer) - Floating fzf project picker that switches to a directory's Rex session, creating it if needed. Supports nested project directories.
 - [RexPocket](https://github.com/leizhiyuan/rexpocket) - Android client for browsing Rex sessions, tabs, and panes, reading terminal output, and sending input through the server API. Build the APK from source.
+- [rex-sessions](https://github.com/AlbertoBarrago/rex-sessions) - Saves and restores session layouts, pane labels, and working directories, with optional autosave on macOS. Restores shells without scrollback or running programs.
+- [herdr2rex](https://github.com/tornikegomareli/herdr2rex) - Imports herdr workspaces into Rex with tabs, splits, working directories, and resumable agent conversations. Supports incremental imports and exporting Rex sessions back to herdr.
 
 ## Coding agents
 
@@ -72,6 +74,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [Courier](https://github.com/abhi-reducto/courier) - macOS menu bar app that transfers files over SSH to Tailscale machines and pastes their remote paths into coding agent panes in Rex.
 - [rex-themes](https://github.com/AlbertoBarrago/rex-themes) - Theme library and Python CLI for previewing colors in a Rex pane, importing persistent app themes, and adding schemes from iTerm2-Color-Schemes.
 - [krd](https://github.com/zzjcool/krd) - Displays and controls a macOS desktop inside a Rex terminal pane over SSH using Kitty graphics, with mouse and keyboard input.
+- [tkmp](https://github.com/tfcace/tkmp) - Live Markdown previewer with Mermaid diagrams rendered through Kitty graphics and automatic updates on save. Includes a Rex keybinding for opening previews beside the focused pane.
 
 ## Frameworks
 
