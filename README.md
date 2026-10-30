@@ -37,6 +37,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [Pi runbook](https://github.com/polo871209/dotfiles/tree/main/.pi/agent/extensions/runbook) - Turns commands from Pi agents into interactive steps that run inline, paste into a Rex pane, or copy to the clipboard.
 - [rexgram](https://github.com/beejmaxx/rexgram) - Talk to the Claude Code and Codex agents in your Rex panes from Telegram. Messages go to the focused pane, and you can switch panes from your phone. Replies come back, and permission prompts arrive as buttons. It stays quiet while you're at your desk.
 - [rex-launch](https://github.com/nicosuave/rex-launch) - Composer popup that launches Claude Code or Codex with a prompt in a new Git worktree through worktrunk. Supports local and remote Rex projects.
+- [rex-mcp-bridge](https://github.com/fatwang2/rex-mcp-bridge) - MCP server that lets agents read terminal output and run commands in visible Rex windows across hosts, with persistent shells and per-client access controls.
 
 ## Agent dashboards
 
@@ -69,6 +70,8 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [RAFT](https://github.com/theboxer/raft) - Nine floating terminal slots per session, tab, or pane, with a searchable manager and output preview. Hiding terminals keeps their processes running.
 - [sshpick](https://github.com/calvindotnow/sshpick) - Floating SSH host picker that opens connections in named Rex tabs, grouped into sessions by SSH config tags. Supports adding and deleting hosts.
 - [Courier](https://github.com/abhi-reducto/courier) - macOS menu bar app that transfers files over SSH to Tailscale machines and pastes their remote paths into coding agent panes in Rex.
+- [rex-themes](https://github.com/AlbertoBarrago/rex-themes) - Theme library and Python CLI for previewing colors in a Rex pane, importing persistent app themes, and adding schemes from iTerm2-Color-Schemes.
+- [krd](https://github.com/zzjcool/krd) - Displays and controls a macOS desktop inside a Rex terminal pane over SSH using Kitty graphics, with mouse and keyboard input.
 
 ## Frameworks
 
