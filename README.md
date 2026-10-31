@@ -79,7 +79,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 ## Frameworks
 
 - [LazyRex](https://github.com/lazy-rex/LazyRex) - Plugin hub for Rex with versioned plugins, dependencies, per-plugin databases, cross-server messaging, a TUI renderer, and plugin palette and CLI commands.
-- [Rex Plugin Manager](https://github.com/rawnly/rex-package-manager) - Installs and loads GitHub Lua plugins for Rex, with version selection and a lockfile.
+- [Amber](https://github.com/rawnly/amber) - Installs and loads GitHub Lua plugins for Rex, with version selection and a lockfile. Previously called Rex Plugin Manager.
 
 ## Fun
 
