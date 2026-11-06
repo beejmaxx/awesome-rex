@@ -75,6 +75,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rex-themes](https://github.com/AlbertoBarrago/rex-themes) - Theme library and Python CLI for previewing colors in a Rex pane, importing persistent app themes, and adding schemes from iTerm2-Color-Schemes.
 - [krd](https://github.com/zzjcool/krd) - Displays and controls a macOS desktop inside a Rex terminal pane over SSH using Kitty graphics, with mouse and keyboard input.
 - [tkmp](https://github.com/tfcace/tkmp) - Live Markdown previewer with Mermaid diagrams rendered through Kitty graphics and automatic updates on save. Includes a Rex keybinding for opening previews beside the focused pane.
+- [rex-fingers](https://github.com/xeind/rex-fingers) - Letter hints over paths, URLs, and hashes in a pane, like tmux-fingers. Type a hint to copy the match; add Shift to paste it or Ctrl to open it.
 
 ## Frameworks
 
