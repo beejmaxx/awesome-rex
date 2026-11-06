@@ -40,6 +40,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rexgram](https://github.com/beejmaxx/rexgram) - Talk to the Claude Code and Codex agents in your Rex panes from Telegram. Messages go to the focused pane, and you can switch panes from your phone. Replies come back, and permission prompts arrive as buttons. It stays quiet while you're at your desk.
 - [rex-launch](https://github.com/nicosuave/rex-launch) - Composer popup that launches Claude Code or Codex with a prompt in a new Git worktree through worktrunk. Supports local and remote Rex projects.
 - [rex-mcp-bridge](https://github.com/fatwang2/rex-mcp-bridge) - MCP server that lets agents read terminal output and run commands in visible Rex windows across hosts, with persistent shells and per-client access controls.
+- [rex-claude](https://www.aitmpl.com/component/skill/productivity/rex-claude) - Claude Code skill that opens other Claude Code sessions in Rex panes and drives them: sends prompts, waits on each turn through the Program Status Protocol, handles permission prompts, reads the screen and closes the pane.
 
 ## Agent dashboards
 
@@ -54,6 +55,8 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [smart-splits-backend-rex](https://github.com/rawnly/smart-splits-backend-rex) - Rex backend for smart-splits.nvim: navigate and resize across Neovim and Rex.
 - [nvim-rex](https://github.com/theboxer/nvim-rex) - Seamless navigation between Neovim and Rex.
 - [neorex](https://github.com/alexrlocke/neorex) - Neovim frontend for macOS that maps editor splits to Rex panes, sharing buffers, registers, undo, and language servers through one Neovim process.
+- [vim-rex-navigator](https://github.com/pankrashin/vim-rex-navigator) - Focus, move, resize and close Vim or Neovim windows and Rex panes with the same keys, like vim-tmux-navigator. Ships the Rex side as a Lua module for `init.lua`.
+- [rex-runner.nvim](https://github.com/oligot/rex-runner.nvim) - Port of vim-tmux-runner: opens a scratch pane next to Neovim and sends it lines, commands or the current file path through the `rex` CLI.
 
 ## Code review
 
