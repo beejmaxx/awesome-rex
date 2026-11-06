@@ -75,6 +75,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rex-themes](https://github.com/AlbertoBarrago/rex-themes) - Theme library and Python CLI for previewing colors in a Rex pane, importing persistent app themes, and adding schemes from iTerm2-Color-Schemes.
 - [krd](https://github.com/zzjcool/krd) - Displays and controls a macOS desktop inside a Rex terminal pane over SSH using Kitty graphics, with mouse and keyboard input.
 - [tkmp](https://github.com/tfcace/tkmp) - Live Markdown previewer with Mermaid diagrams rendered through Kitty graphics and automatic updates on save. Includes a Rex keybinding for opening previews beside the focused pane.
+- [rexeme](https://github.com/DeepanshuMishraa/rexeme) - Applies Rex's current theme to 52 editors, terminals, and CLI tools, including VS Code, Zed, JetBrains IDEs, Neovim, Ghostty, and lazygit, and follows theme and light/dark changes from a background watcher on macOS.
 
 ## Frameworks
 
