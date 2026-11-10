@@ -138,6 +138,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [Herdrex](https://github.com/elonnzhang/Herdrex) - Serves a running Herdr server as a Rex host, so Rex.app and the `rex` CLI see Herdr's workspaces as sessions, its tabs as windows, and its panes as blocks. Typing, pasting, mouse, and wheel input go to the Herdr pane, and its screen streams back through Herdr's terminal protocol. ([demo](https://github.com/elonnzhang/Herdrex/blob/main/imgs/herdrex-in-rex.png))
 - [lazyrex](https://github.com/rbobillot/lazyrex) - Terminal UI for browsing and managing sessions, windows, blocks, and clients across local, native, and SSH Rex servers, with capture and inspect views and a command log.
 - [rexeme](https://github.com/DeepanshuMishraa/rexeme) - Applies Rex's current theme to 52 editors, terminals, and CLI tools, including VS Code, Zed, JetBrains IDEs, Neovim, Ghostty, and lazygit, and follows theme and light/dark changes from a background watcher on macOS.
+- [rex-fingers](https://github.com/xeind/rex-fingers) - Letter hints over paths, URLs, and hashes in a pane, like tmux-fingers. Type a hint to copy the match; add Shift to paste it or Ctrl to open it.
 
 ## Frameworks
 
