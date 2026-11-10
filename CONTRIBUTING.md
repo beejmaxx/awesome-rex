@@ -12,11 +12,11 @@ Please include only projects that:
 - link to their own repository or site, not to Rex downloads, invites, or beta-only channels;
 - have a README explaining what they do and how to install them.
 
-Keep descriptions factual, and list new entries at the end of their section. Leave off the star count: a weekly job adds it.
+Keep descriptions factual, and list new entries at the end of their section. Leave off the star badge: a workflow adds it after merging.
 
 ## Maintaining
 
-`scripts/new-from-export.py` lists GitHub repositories mentioned in a Discord channel export (DiscordChatExporter JSON) that aren't in the list yet. CI runs `awesome-lint` on every change and checks all links every Monday. On Sundays, the Stars workflow runs `scripts/update-stars.py` to refresh each entry's trailing `(★ N)` count and commits the result. To refresh counts locally with your `gh` login, run `python3 scripts/update-stars.py`, or add `--check` to report stale counts without writing. After reorganizing sections or a large update, refresh the README preview image with `python3 scripts/render-images.py` (uses headless Google Chrome); add `--since REV --announcement PATH` to also render an image of the projects added since a revision. It also writes `assets/social-preview.png`, the card GitHub shows when the repository link is shared; GitHub has no API for it, so upload it by hand under Settings > General > Social preview.
+`scripts/new-from-export.py` lists GitHub repositories mentioned in a Discord channel export (DiscordChatExporter JSON) that aren't in the list yet. CI runs `awesome-lint` on every change and checks all links every Monday. Entries that link to a GitHub repository end with a live shields.io star badge. Whenever `README.md` changes on `main`, the Stars workflow runs `scripts/update-stars.py` to add any missing badges and commits the result. Run it locally with `python3 scripts/update-stars.py`, or add `--check` to report missing badges without writing. After reorganizing sections or a large update, refresh the README preview image with `python3 scripts/render-images.py` (uses headless Google Chrome); add `--since REV --announcement PATH` to also render an image of the projects added since a revision. `assets/social-preview.png` is the card GitHub shows when the repository link is shared. It's drawn by hand, and GitHub has no API for it, so upload changes under Settings > General > Social preview.
 
 To refresh from showcase, install [DiscordChatExporter](https://github.com/Tyrrrz/DiscordChatExporter) and run:
 

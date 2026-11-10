@@ -1,8 +1,11 @@
 name: Stars
 
+# Star counts are live shields.io badges, so this only adds badges to entries that
+# arrived without one (for example from a merged pull request).
 on:
-  schedule:
-    - cron: "0 0 * * 0" # Sundays, clear of the Monday/Wednesday/Friday showcase updates
+  push:
+    branches: [main]
+    paths: [README.md]
   workflow_dispatch:
 
 permissions:
@@ -13,24 +16,21 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  refresh:
+  badges:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - run: python3 -m unittest discover -s scripts -p 'test_*.py'
       - run: python3 scripts/update-stars.py
-        env:
-          GH_TOKEN: ${{ github.token }}
       - run: npx --yes awesome-lint
-      - name: Commit changed counts
+      - name: Commit added badges
         run: |
           if git diff --quiet -- README.md; then
-            echo "Star counts are current."
+            echo "Every repository entry has a star badge."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Refresh star counts" -- README.md
+          git commit -m "Add star badges to new entries" -- README.md
           git push

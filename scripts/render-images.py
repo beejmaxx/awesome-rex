@@ -11,6 +11,7 @@ default, or $CHROME) and looks best with JetBrains Mono installed.
 """
 import argparse
 import html
+import importlib.util
 import os
 import re
 import subprocess
@@ -22,7 +23,10 @@ ROOT = Path(__file__).resolve().parents[1]
 CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 SKIP = {"Contents", "Contributing", "Official resources"}
 ENTRY = re.compile(r"^- \[([^\]]+)\]\((\S+?)\)")
-STARS = re.compile(r"\(★ ([\d.]+)(k?)\)$")
+REPO = re.compile(r"^https://github\.com/([\w.-]+/[\w.-]+?)(?:\.git)?/?$")
+spec = importlib.util.spec_from_file_location("stars", ROOT / "scripts/update-stars.py")
+stars = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(stars)
 
 STYLE = """
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -49,11 +53,19 @@ def parse(text):
             if current:
                 sections.append(current)
         elif current is not None and (match := ENTRY.match(line)):
-            stars = STARS.search(line)
-            value = float(stars.group(1)) * (1000 if stars.group(2) else 1) if stars else 0
             current["entries"].append({"name": match.group(1), "url": match.group(2).rstrip("/").lower(),
-                                       "stars": stars.group(1) + stars.group(2) if stars else "", "value": value})
+                                       "stars": "", "value": 0})
     return sections
+
+
+def attach_stars(sections):
+    """Fill in live star counts for entries that link straight to a repository."""
+    entries = [e for s in sections for e in s["entries"] if REPO.match(e["url"])]
+    counts = stars.fetch_stars(sorted({REPO.match(e["url"]).group(1) for e in entries}))
+    for e in entries:
+        count = counts.get(REPO.match(e["url"]).group(1))
+        if count:
+            e.update(stars=stars.format_stars(count), value=count)
 
 
 def rows(entries):
@@ -75,7 +87,7 @@ def preview(sections):
 <div style="font-size:72px;font-weight:800;letter-spacing:-.02em;line-height:1">awesome-rex</div>
 <div class="dim" style="font-size:19px;margin-top:14px">Tools, plugins and integrations for Rex, collected from #showcase</div>
 <div class="mono accent" style="font-size:19px;margin-top:8px">github.com/beejmaxx/awesome-rex</div>
-<div class="dim" style="font-size:16px;margin-top:16px">{total} projects · {len(sections)} sections · ★ refreshed weekly · PRs welcome</div>
+<div class="dim" style="font-size:16px;margin-top:16px">{total} projects · {len(sections)} sections · live ★ counts · PRs welcome</div>
 </div>{cards}</div>"""
 
 
@@ -96,27 +108,9 @@ def announcement(sections, before, merged_prs):
 <div style="font-size:30px;font-weight:700">awesome-rex</div>
 <div class="mono accent" style="font-size:20px">github.com/beejmaxx/awesome-rex</div></div>
 <div style="font-size:84px;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin-top:12px">+{added} new projects</div>
-<div class="dim" style="font-size:22px;margin-top:10px">{total - added} → {total} projects{prs} · reorganized into {len(sections)} sections · ★ star counts, refreshed weekly</div>
+<div class="dim" style="font-size:22px;margin-top:10px">{total - added} → {total} projects{prs} · reorganized into {len(sections)} sections · live ★ star badges</div>
 <div class="cols">{groups}</div>
 <div class="dim" style="font-size:17px">Built something for Rex? Post it in #showcase or open a PR.</div>
-</div>"""
-
-
-def social(sections):
-    """GitHub social preview (1280x640). Uploaded by hand, so counts are rounded to stay true."""
-    total = sum(len(s["entries"]) for s in sections)
-    rounded = f"{total // 10 * 10}+" if total >= 20 else str(total)
-    chips = "".join(f'<span class="chip">{html.escape(s["name"])}</span>' for s in sections)
-    return f"""<style>{STYLE % {"w": 1280, "h": 640}}
-.wrap {{ position: absolute; inset: 70px 76px; display: flex; flex-direction: column; }}
-.chips {{ display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto; }}
-.chip {{ background: #1a2330; color: #f0895a; border-radius: 999px; padding: 9px 18px;
-  font-size: 19px; font-weight: 600; }}
-</style><div class="wrap">
-<div style="font-size:116px;font-weight:800;letter-spacing:-.025em;line-height:1">awesome-rex</div>
-<div style="font-size:32px;margin-top:20px;color:#c9cfda">Tools, plugins and integrations for Rex</div>
-<div class="dim" style="font-size:26px;margin-top:12px">{rounded} projects from #showcase · ★ counts · PRs welcome</div>
-<div class="chips">{chips}</div>
 </div>"""
 
 
@@ -133,8 +127,6 @@ def render(page, out, width, height):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--preview", type=Path, default=ROOT / "assets/preview.png")
-    parser.add_argument("--social", type=Path, default=ROOT / "assets/social-preview.png",
-                        help="GitHub social preview; upload it in the repository's Settings > Social preview")
     parser.add_argument("--since", help="Git revision to compare against for the announcement")
     parser.add_argument("--announcement", type=Path, help="Where to write the announcement image")
     parser.add_argument("--merged-prs", type=int, default=0, help="Community PRs merged since --since")
@@ -142,8 +134,8 @@ def main():
                         help="Treat a renamed entry's new URL as already listed")
     args = parser.parse_args()
     sections = parse((ROOT / "README.md").read_text(encoding="utf-8"))
+    attach_stars(sections)
     render(preview(sections), args.preview.resolve(), 1600, 750)
-    render(social(sections), args.social.resolve(), 1280, 640)
     if args.announcement:
         if not args.since:
             parser.error("--announcement needs --since")
