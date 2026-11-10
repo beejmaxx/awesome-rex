@@ -48,7 +48,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 
 ## Mobile clients
 
-- [RexPocket](https://github.com/leizhiyuan/rexpocket) - Android client for browsing sessions, reading output, and sending input. ![Stars](https://img.shields.io/github/stars/leizhiyuan/rexpocket?style=social)
+- [RexPocket](https://github.com/leizhiyuan/rexpocket) - Android client for browsing sessions and sending input (build from source). ![Stars](https://img.shields.io/github/stars/leizhiyuan/rexpocket?style=social)
 - [Rexling](https://github.com/shulhi/rexling) - Unofficial Android client for Rex terminals across servers over Tailscale. ![Stars](https://img.shields.io/github/stars/shulhi/rexling?style=social)
 - [rexc](https://github.com/Nam0101/rexc) - Android client with sessions, terminals, and an inbox for blocked agents. ![Stars](https://img.shields.io/github/stars/Nam0101/rexc?style=social)
 - [Rhubarb](https://github.com/Joshua-Wise/rhubarb) - Unofficial Android client with live terminals and agent alerts over Tailscale. ![Stars](https://img.shields.io/github/stars/Joshua-Wise/rhubarb?style=social)
@@ -73,7 +73,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 
 ## Agent dashboards
 
-- [rex-radar](https://github.com/hecspc/rex-radar) - Menu bar, widget, iPhone, and Apple Watch apps showing every Claude agent. ([demo](https://github.com/hecspc/rex-radar/blob/main/docs/screenshots/mac-panel.png)) ![Stars](https://img.shields.io/github/stars/hecspc/rex-radar?style=social)
+- [rex-radar](https://github.com/hecspc/rex-radar) - Menu bar, widget, iPhone, and Watch apps for Claude agents (build from source). ([demo](https://github.com/hecspc/rex-radar/blob/main/docs/screenshots/mac-panel.png)) ![Stars](https://img.shields.io/github/stars/hecspc/rex-radar?style=social)
 - [rexboard](https://github.com/vanducng/rexboard) - Attention board showing which agent panes are waiting, and for how long. ([demo](https://github.com/vanducng/rexboard/blob/main/docs/assets/demo.gif)) ![Stars](https://img.shields.io/github/stars/vanducng/rexboard?style=social)
 - [cheap-rex-display](https://github.com/yethranayeh/cheap-rex-display) - ESP32 desk display that shows agent status and blinks when one needs you. ([demo](https://res.cloudinary.com/drwbqceye/image/upload/v1792852978/opencode-status-cycle_r6f1ad.webp)) ![Stars](https://img.shields.io/github/stars/yethranayeh/cheap-rex-display?style=social)
 - [ai-usage](https://github.com/trishtzy/ai-usage) - Tracks Claude Code, Codex, and other AI usage limits inside Rex. ([demo](https://github.com/trishtzy/ai-usage/blob/main/ai-usage-demo.gif)) ![Stars](https://img.shields.io/github/stars/trishtzy/ai-usage?style=social)
@@ -83,9 +83,9 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rexpad](https://github.com/almonk/rexpad) - Live agent todo lists rendered beside the agent. ![Stars](https://img.shields.io/github/stars/almonk/rexpad?style=social)
 - [rex-micro](https://github.com/JiehoonKwak/rex-micro) - Turns a Work Louder Codex Micro into an agent status display and controller. ![Stars](https://img.shields.io/github/stars/JiehoonKwak/rex-micro?style=social)
 - [rexq](https://github.com/tfcace/rexq) - Floating inbox for questions and decisions from Claude Code and Pi. ![Stars](https://img.shields.io/github/stars/tfcace/rexq?style=social)
-- [Tea](https://github.com/ianiv/tea) - macOS menu bar monitor for Claude Code sessions that jumps to their panes. ![Stars](https://img.shields.io/github/stars/ianiv/tea?style=social)
+- [Tea](https://github.com/ianiv/tea) - macOS menu bar monitor that jumps to Claude Code panes (build from source). ![Stars](https://img.shields.io/github/stars/ianiv/tea?style=social)
 - [agentmeter](https://github.com/SaeedNoshadi89/agentmeter) - Shows remaining Claude Code and Codex usage limits in a popup or pane. ![Stars](https://img.shields.io/github/stars/SaeedNoshadi89/agentmeter?style=social)
-- [Rex's Tail](https://github.com/travelingflwr/rex-tail) - macOS panel beside the Rex window showing agent activity and weather. ![Stars](https://img.shields.io/github/stars/travelingflwr/rex-tail?style=social)
+- [Rex's Tail](https://github.com/travelingflwr/rex-tail) - macOS panel beside Rex showing agent activity and weather (build from source). ![Stars](https://img.shields.io/github/stars/travelingflwr/rex-tail?style=social)
 - [rex-agents](https://github.com/irfn/rex-agents) - Agent sidebar across hosts that jumps to agents waiting for input. ![Stars](https://img.shields.io/github/stars/irfn/rex-agents?style=social)
 
 ## Editors
