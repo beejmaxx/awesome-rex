@@ -62,6 +62,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rex-grokbot-bridge](https://github.com/smarzban/rex-grokbot-bridge) - MCP and webhook bridge for Grok Bot to inspect and control shared Rex panes over Tailscale and receive agent status updates.
 - [tr3x](https://github.com/macnason/tr3x) - Displays T3 Code conversations as Rex tabs, with replies, approvals, and questions sent back to T3.
 - [barbasol-can](https://github.com/pthm/barbasol-can) - Transfers Claude Code, Codex, and OpenCode conversations to another Rex host and resumes them in a selected directory and session.
+- [rex-claude](https://www.aitmpl.com/component/skill/productivity/rex-claude) - Claude Code skill that opens other Claude Code sessions in Rex panes and drives them: sends prompts, waits on each turn through the Program Status Protocol, handles permission prompts, reads the screen and closes the pane.
 
 ## Agent dashboards
 
@@ -90,6 +91,8 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [colorrex.nvim](https://github.com/reklai/colorrex.nvim) - Builds a Neovim colorscheme from Rex's terminal palette and updates it as the terminal theme changes.
 - [navigator.nvim](https://github.com/omenlog/neovim-navigator) - Moves focus between Neovim splits and Rex panes with configured directional keybindings, generating matching Rex bindings.
 - [lazyrex.nvim](https://github.com/omenlog/lazyrex) - Full LazyGit integration for Rex and Neovim: keeps a stateful floating session, opens selected files and lines for editing in the originating Neovim instance, then minimizes and restores it.
+- [vim-rex-navigator](https://github.com/pankrashin/vim-rex-navigator) - Focus, move, resize and close Vim or Neovim windows and Rex panes with the same keys, like vim-tmux-navigator. Ships the Rex side as a Lua module for `init.lua`.
+- [rex-runner.nvim](https://github.com/oligot/rex-runner.nvim) - Port of vim-tmux-runner: opens a scratch pane next to Neovim and sends it lines, commands or the current file path through the `rex` CLI.
 
 ## Code review
 
