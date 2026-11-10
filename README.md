@@ -88,6 +88,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [neorex](https://github.com/alexrlocke/neorex) - Neovim frontend for macOS that maps editor splits to Rex panes, sharing buffers, registers, undo, and language servers through one Neovim process.
 - [lazyrex.nvim](https://github.com/omenlog/lazyrex) - Opens a persistent LazyGit float from Neovim in Rex, returning selected files to the originating editor while preserving LazyGit's state.
 - [colorrex.nvim](https://github.com/reklai/colorrex.nvim) - Builds a Neovim colorscheme from Rex's terminal palette and updates it as the terminal theme changes.
+- [navigator.nvim](https://github.com/omenlog/neovim-navigator) - Moves focus between Neovim splits and Rex panes with configured directional keybindings, generating matching Rex bindings.
 
 ## Code review
 
