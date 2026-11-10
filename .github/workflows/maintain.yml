@@ -1,0 +1,39 @@
+name: Maintain
+
+# Weekly link repair: renamed repositories get their new URLs, deleted ones are
+# removed, and anything that can't be fixed automatically is listed in the run
+# summary. Content problems never fail this workflow; it commits its repairs.
+on:
+  schedule:
+    - cron: "0 9 * * 1" # Mondays
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readme-bot
+  cancel-in-progress: false
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: python3 scripts/maintain-links.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: npx --yes awesome-lint
+      - name: Commit repairs
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No repairs needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Repair renamed and deleted project links" -- README.md
+          git pull --rebase --quiet origin main
+          git push

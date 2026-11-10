@@ -1,11 +1,12 @@
 name: Check
 
+# Pushes and pull requests run only checks that don't depend on other sites, so a
+# flaky external link can never fail main. Link rot is repaired weekly by the
+# Maintain workflow instead of being reported as a failure.
 on:
   push:
     branches: [main]
   pull_request:
-  schedule:
-    - cron: "0 9 * * 1" # Mondays, to catch links that die
   workflow_dispatch:
 
 jobs:
@@ -18,11 +19,21 @@ jobs:
       - run: python3 -m unittest discover -s scripts -p 'test_*.py'
       - run: npx --yes awesome-lint
 
-  links:
+  # Only the links a pull request adds, so contributors hear about their own typos
+  # and never about someone else's site being down.
+  new-links:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Collect added lines
+        run: |
+          git diff --unified=0 "origin/${{ github.base_ref }}...HEAD" -- README.md CONTRIBUTING.md \
+            | grep '^+[^+]' | sed 's/^+//' > added-lines.md || true
+          echo "Checking $(grep -c . added-lines.md || true) added lines"
       - uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress --max-retries 3 --accept 200,206,429 README.md CONTRIBUTING.md
+          args: --no-progress --max-retries 3 --accept 200,206,429 --exclude '^https://img\.shields\.io/' added-lines.md
           fail: true
