@@ -87,7 +87,6 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [smart-splits-backend-rex](https://github.com/rawnly/smart-splits-backend-rex) - Rex backend for smart-splits.nvim: navigate and resize across Neovim and Rex.
 - [nvim-rex](https://github.com/theboxer/nvim-rex) - Seamless navigation between Neovim and Rex.
 - [neorex](https://github.com/alexrlocke/neorex) - Neovim frontend for macOS that maps editor splits to Rex panes, sharing buffers, registers, undo, and language servers through one Neovim process.
-- [lazyrex.nvim](https://github.com/omenlog/lazyrex) - Opens a persistent LazyGit float from Neovim in Rex, returning selected files to the originating editor while preserving LazyGit's state.
 - [colorrex.nvim](https://github.com/reklai/colorrex.nvim) - Builds a Neovim colorscheme from Rex's terminal palette and updates it as the terminal theme changes.
 - [navigator.nvim](https://github.com/omenlog/neovim-navigator) - Moves focus between Neovim splits and Rex panes with configured directional keybindings, generating matching Rex bindings.
 - [lazyrex.nvim](https://github.com/omenlog/lazyrex) - Full LazyGit integration for Rex and Neovim: keeps a stateful floating session, opens selected files and lines for editing in the originating Neovim instance, then minimizes and restores it.
@@ -99,7 +98,6 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rexdiff](https://github.com/rednafi/rexdiff) - Review what a coding agent changed without leaving Rex, in the style of herdr-reviewr. ([demo](https://github.com/user-attachments/assets/d56af0f9-e1ff-422d-b0e7-0e5afe3320ae))
 - [reviewr.nvim](https://github.com/paul-enz/reviewr.nvim) - Review Git diffs in Neovim and send line comments to an agent running in Rex, tmux, or WezTerm. ([demo](https://github.com/paul-enz/reviewr.nvim/blob/main/assets/demo.gif))
 - [tuicr](https://github.com/agavra/tuicr) - Terminal diff reviewer with line comments and review exports, including an agent skill that opens reviews in a Rex split.
-- [rexamine](https://github.com/segersniels/rexamine) - Reviews local changes and GitHub pull requests beside an agent, sending selected lines and comments into its prompt or posting comments to GitHub.
 - [rexdiff by victorvf](https://github.com/victorvf/rexdiff) - Live file tree and colored Git diffs in a Rex pane, with review tracking, staging, commits, and branch operations.
 - [rexamine](https://github.com/segersniels/rexamine) - Review local changes or a GitHub pull request in a pane beside your coding agent, and send comments on selected lines into the agent's prompt. ([demo](https://github.com/segersniels/rexamine/blob/main/assets/demo.gif))
 - [rex.nvim](https://github.com/rawnly/rex.nvim) - Annotate code in Neovim and send comments or file references to a coding agent in a Rex session. ([demo](https://github.com/user-attachments/assets/47bc945d-6377-4df5-80a6-93bd219fd1b6))
@@ -128,7 +126,6 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rexshow](https://github.com/wcwung/rexshow) - Displays screenshots and screen recordings beside coding agents, with folder watching, zoom, and playback controls usable from Rex on iOS.
 - [rex8s](https://github.com/vitalbh/rex8s) - Kubernetes toolkit with isolated cluster panes, log splits, multi-cluster views, and rollout progress in Rex's program status indicators.
 - [rex-canvas](https://github.com/AlbertoBarrago/rex-canvas) - Watches a PNG and displays updates in a pane beside the agent, with pan and zoom controls and a skill for Markasso diagram exports.
-- [rexeme](https://github.com/DeepanshuMishraa/rexeme) - Synchronizes Rex's theme and light or dark appearance to supported editors, terminals, and other applications on macOS.
 - [rex-typst](https://github.com/CiaranMcDonnell/rex-typst) - Live Typst document preview in a Rex pane, with source navigation and support for unsaved Neovim buffers.
 - [scrcpyt](https://github.com/leset0ng/scrcpyt) - Mirrors and controls Android devices in Rex through scrcpy and Kitty graphics, with mouse, keyboard, and clipboard support.
 - [heypad](https://github.com/travelingflwr/heypad) - HEY email client rendered in Rex panes, with floating mail views, replies, and colors from the Rex theme.
