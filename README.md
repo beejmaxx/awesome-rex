@@ -96,6 +96,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [tuicr](https://github.com/agavra/tuicr) - Terminal diff reviewer with line comments and review exports, including an agent skill that opens reviews in a Rex split.
 - [rexamine](https://github.com/segersniels/rexamine) - Reviews local changes and GitHub pull requests beside an agent, sending selected lines and comments into its prompt or posting comments to GitHub.
 - [rexdiff by victorvf](https://github.com/victorvf/rexdiff) - Live file tree and colored Git diffs in a Rex pane, with review tracking, staging, commits, and branch operations.
+- [rexamine](https://github.com/segersniels/rexamine) - Review local changes or a GitHub pull request in a pane beside your coding agent, and send comments on selected lines into the agent's prompt. ([demo](https://github.com/segersniels/rexamine/blob/main/assets/demo.gif))
 
 ## Workflow utilities
 
