@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export Rex's showcase and threads, then write candidates for an awesome-rex update.
+"""Export Rex's showcase channel, then write candidates for an awesome-rex update.
 
 Requires the installed DiscordChatExporter CLI. Reads DISCORD_TOKEN from the
 environment, then macOS Keychain. In an interactive terminal, a missing token
@@ -45,8 +45,19 @@ def main():
     parser.add_argument("--from-export", type=Path, help="Skip downloading; read this export file or directory")
     parser.add_argument("--output-dir", type=Path, help="New directory for exports and reports; defaults to .local/showcase/<UTC timestamp>")
     parser.add_argument("--channel", default=SHOWCASE, help="Channel ID to export (default: Rex showcase)")
+    parser.add_argument("--after", help="Only download messages sent after this timezone-aware ISO timestamp")
     args = parser.parse_args()
     started = datetime.now(timezone.utc)
+    if args.after:
+        if args.from_export:
+            parser.error("--after cannot be combined with --from-export")
+        try:
+            after = datetime.fromisoformat(args.after.replace("Z", "+00:00"))
+            if after.tzinfo is None or after >= started:
+                raise ValueError()
+            args.after = after.astimezone(timezone.utc).isoformat()
+        except ValueError:
+            parser.error("--after must be a past ISO timestamp with a timezone")
     run_dir = (args.output_dir or ROOT / ".local/showcase" / started.strftime("%Y%m%dT%H%M%S.%fZ")).expanduser().resolve()
     # Each run is separate, so a failed export cannot be mistaken for an older one.
     if run_dir.exists():
@@ -68,13 +79,15 @@ def main():
         run_dir.mkdir(parents=True, mode=0o700)
         command = [
             exporter, "export", "--channel", args.channel,
-            "--format", "Json", "--include-threads", "All",
+            "--format", "Json", "--include-threads", "None",
             "--before", started.isoformat(), "--utc", "true",
             "--markdown", "false", "--media", "false",
             "--output", str(export_path) + os.sep,
         ]
+        if args.after:
+            command += ["--after", args.after]
         env = dict(os.environ, DISCORD_TOKEN=token)
-        print("Exporting showcase and all accessible threads (text only)...", flush=True)
+        print("Exporting showcase channel only (text only)...", flush=True)
         result = subprocess.run(command, env=env)
         del token, env
         if result.returncode:
@@ -91,6 +104,7 @@ def main():
             "channelId": args.channel,
             "exportPath": str(export_path),
             "downloaded": not bool(args.from_export),
+            "after": args.after,
             "candidateCount": len(candidates),
         }, indent=2) + "\n", encoding="utf-8")
     except (OSError, ValueError) as error:

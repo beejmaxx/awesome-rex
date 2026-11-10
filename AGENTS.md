@@ -5,7 +5,8 @@ Read `CONTRIBUTING.md` for entry criteria and the update workflow. Inspect Git s
 ## Refreshing the list
 
 - Use the installed DiscordChatExporter through `python3 scripts/update-from-showcase.py`. Do not rebuild a custom Discord API scraper.
-- The wrapper exports the showcase channel and all accessible active/archived threads as JSON, then scans for GitHub repositories absent from `README.md`.
+- The wrapper exports the showcase channel only (never threads) as JSON, then scans for GitHub repositories absent from `README.md`.
+- `--after TIMEZONE_AWARE_ISO_TIMESTAMP` downloads only messages created since that cutoff. Scheduled runs use the last successful live maintenance run's start time minus ten minutes; failures and offline test runs never advance it. Omit `--after` for a full historical rescan. Incremental exports do not detect edits to older messages. Never export or review threads.
 - Authentication order: `DISCORD_TOKEN` environment variable, macOS Keychain service `awesome-rex.discord-token` for the current login account, then a hidden interactive prompt.
 - Let the updater read the credential itself. Never print a credential, put it in command arguments, or write it into repository files. If the saved credential stops working, explain the authentication failure; do not assume it is permanent access.
 - Exports, `run.json`, and candidate reports live in Git-ignored `.local/showcase/<UTC timestamp>/`. A successful run has `run.json` and `candidates.json`; interrupted directories may contain only partial exports.

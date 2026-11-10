@@ -24,7 +24,7 @@ To refresh from showcase, install [DiscordChatExporter](https://github.com/Tyrrr
 python3 scripts/update-from-showcase.py
 ```
 
-The command reads `DISCORD_TOKEN` from the environment, then the macOS Keychain item `awesome-rex.discord-token` for your login account, or asks with a hidden prompt in an interactive terminal. It exports showcase and all accessible active and archived threads, then writes `candidates.txt`, `candidates.json`, and run metadata under `.local/showcase/`. Tokens are never placed in command arguments or saved in the repository. The local export directory is ignored by Git. Media is not downloaded, and each run uses a separate snapshot directory.
+The command reads `DISCORD_TOKEN` from the environment, then the macOS Keychain item `awesome-rex.discord-token` for your login account, or asks with a hidden prompt in an interactive terminal. It exports only the showcase channel, never its threads, then writes `candidates.txt`, `candidates.json`, and run metadata under `.local/showcase/`. Tokens are never placed in command arguments or saved in the repository. The local export directory is ignored by Git. Media is not downloaded, and each run uses a separate snapshot directory.
 
 On macOS, save or replace your token in Keychain once with the following command. The final `-w` prompts for the value instead of putting it in shell history or process arguments:
 
@@ -33,6 +33,14 @@ security add-generic-password -U -a "$USER" -s awesome-rex.discord-token -w
 ```
 
 Future refreshes can then use the saved token. If Keychain is locked, unlock it through macOS before running the updater. A revoked or expired token needs to be replaced.
+
+For an incremental export, pass a previous successful snapshot's `startedAt` as `--after`, subtracting ten minutes for overlap:
+
+```sh
+python3 scripts/update-from-showcase.py --after 2026-11-01T11:50:00Z
+```
+
+This bounds downloads by message creation time, excluding threads entirely. Only advance the cutoff after the exported candidates have been reviewed and any additions published; failed exports or reviews must keep the old cutoff. Omit `--after` to rescan history, including edits to old messages that incremental exports cannot detect.
 
 An agent can scan an existing export without credentials or another download:
 

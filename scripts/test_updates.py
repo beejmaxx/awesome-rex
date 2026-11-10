@@ -108,8 +108,12 @@ from pathlib import Path
 assert os.environ['DISCORD_TOKEN'] == 'not-a-real-token'
 assert 'not-a-real-token' not in ' '.join(sys.argv)
 assert '--token' not in sys.argv and '-t' not in sys.argv
-assert sys.argv[sys.argv.index('--include-threads') + 1] == 'All'
-assert '--after' not in sys.argv and '--before' in sys.argv
+assert sys.argv[sys.argv.index('--include-threads') + 1] == 'None'
+assert '--before' in sys.argv
+if os.environ.get('STUB_AFTER'):
+    assert sys.argv[sys.argv.index('--after') + 1] == os.environ['STUB_AFTER']
+else:
+    assert '--after' not in sys.argv
 output = Path(sys.argv[sys.argv.index('--output') + 1])
 output.mkdir(parents=True)
 (output / 'export.json').write_text(json.dumps({'guild': {'id': '1'}, 'channel': {'id': '2'}, 'messages': []}))
@@ -117,13 +121,24 @@ sys.exit(int(os.environ.get('STUB_EXIT', '0')))
 ''')
             stub.chmod(0o700)
             env = dict(os.environ, PATH=str(root), DISCORD_TOKEN="not-a-real-token")
-            for code in (0, 17):
-                output = root / f"run-{code}"
-                result = subprocess.run([sys.executable, str(SCRIPTS / "update-from-showcase.py"), "--output-dir", str(output)], env=dict(env, STUB_EXIT=str(code)), capture_output=True, text=True)
+            for code, after in ((0, None), (0, '2026-10-01T00:00:00+00:00'), (17, '2026-10-01T00:00:00+00:00')):
+                output = root / f"run-{code}-{bool(after)}"
+                command = [sys.executable, str(SCRIPTS / "update-from-showcase.py"), "--output-dir", str(output)]
+                if after:
+                    command += ['--after', after]
+                result = subprocess.run(command, env=dict(env, STUB_EXIT=str(code), STUB_AFTER=after or ''), capture_output=True, text=True)
                 self.assertEqual(result.returncode, 0 if code == 0 else 1, result.stderr)
                 self.assertEqual((output / "candidates.json").exists(), code == 0)
                 self.assertNotIn("not-a-real-token", result.stdout + result.stderr)
                 self.assertNotIn("not-a-real-token", "".join(p.read_text() for p in output.rglob("*.json")))
+                if code == 0:
+                    self.assertEqual(json.loads((output / 'run.json').read_text())['after'], after)
+
+    def test_invalid_delta_cutoff_fails_before_export(self):
+        for after in ('garbage', '2026-10-01T00:00:00', '9999-01-01T00:00:00Z'):
+            result = subprocess.run([sys.executable, str(SCRIPTS / 'update-from-showcase.py'), '--after', after], capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn('--after must be a past ISO timestamp', result.stderr)
 
 
 if __name__ == "__main__":
