@@ -103,6 +103,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rexdiff by victorvf](https://github.com/victorvf/rexdiff) - Live file tree and colored Git diffs in a Rex pane, with review tracking, staging, commits, and branch operations.
 - [rexamine](https://github.com/segersniels/rexamine) - Review local changes or a GitHub pull request in a pane beside your coding agent, and send comments on selected lines into the agent's prompt. ([demo](https://github.com/segersniels/rexamine/blob/main/assets/demo.gif))
 - [rex.nvim](https://github.com/rawnly/rex.nvim) - Annotate code in Neovim and send comments or file references to a coding agent in a Rex session. ([demo](https://github.com/user-attachments/assets/47bc945d-6377-4df5-80a6-93bd219fd1b6))
+- [rex-relay.nvim](https://github.com/crierr/rex-relay.nvim) - Sends file:line references and review comments from Neovim to CLI coding agents running in other Rex panes. Finds agents automatically or prompts you to choose.
 
 ## Workflow utilities
 
