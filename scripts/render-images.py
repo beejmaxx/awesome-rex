@@ -102,6 +102,24 @@ def announcement(sections, before, merged_prs):
 </div>"""
 
 
+def social(sections):
+    """GitHub social preview (1280x640). Uploaded by hand, so counts are rounded to stay true."""
+    total = sum(len(s["entries"]) for s in sections)
+    rounded = f"{total // 10 * 10}+" if total >= 20 else str(total)
+    chips = "".join(f'<span class="chip">{html.escape(s["name"])}</span>' for s in sections)
+    return f"""<style>{STYLE % {"w": 1280, "h": 640}}
+.wrap {{ position: absolute; inset: 70px 76px; display: flex; flex-direction: column; }}
+.chips {{ display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto; }}
+.chip {{ background: #1a2330; color: #f0895a; border-radius: 999px; padding: 9px 18px;
+  font-size: 19px; font-weight: 600; }}
+</style><div class="wrap">
+<div style="font-size:116px;font-weight:800;letter-spacing:-.025em;line-height:1">awesome-rex</div>
+<div style="font-size:32px;margin-top:20px;color:#c9cfda">Tools, plugins and integrations for Rex</div>
+<div class="dim" style="font-size:26px;margin-top:12px">{rounded} projects from #showcase · ★ counts · PRs welcome</div>
+<div class="chips">{chips}</div>
+</div>"""
+
+
 def render(page, out, width, height):
     with tempfile.TemporaryDirectory() as tmp:
         source = Path(tmp, "page.html")
@@ -115,6 +133,8 @@ def render(page, out, width, height):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--preview", type=Path, default=ROOT / "assets/preview.png")
+    parser.add_argument("--social", type=Path, default=ROOT / "assets/social-preview.png",
+                        help="GitHub social preview; upload it in the repository's Settings > Social preview")
     parser.add_argument("--since", help="Git revision to compare against for the announcement")
     parser.add_argument("--announcement", type=Path, help="Where to write the announcement image")
     parser.add_argument("--merged-prs", type=int, default=0, help="Community PRs merged since --since")
@@ -123,6 +143,7 @@ def main():
     args = parser.parse_args()
     sections = parse((ROOT / "README.md").read_text(encoding="utf-8"))
     render(preview(sections), args.preview.resolve(), 1600, 750)
+    render(social(sections), args.social.resolve(), 1280, 640)
     if args.announcement:
         if not args.since:
             parser.error("--announcement needs --since")
