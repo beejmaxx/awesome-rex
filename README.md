@@ -130,6 +130,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [rex-fzf-url](https://github.com/devert/rex-fzf-url) - Finds URLs in pane scrollback and presents a floating fzf picker to open or copy them.
 - [rex-sim](https://github.com/wobsoriano/rex-sim) - Displays and controls iOS simulators and Android emulators inside Rex panes on macOS.
 - [RexDeck](https://github.com/Mathews-Tom/RexDeck) - Opt-in integrations for terminal tools and API views in native Rex panes, returning focus to the originating terminal when closed.
+- [Herdrex](https://github.com/elonnzhang/Herdrex) - Serves a running Herdr server as a Rex host, so Rex.app and the `rex` CLI see Herdr's workspaces as sessions, its tabs as windows, and its panes as blocks. Typing, pasting, mouse, and wheel input go to the Herdr pane, and its screen streams back through Herdr's terminal protocol. ([demo](https://github.com/elonnzhang/Herdrex/blob/main/imgs/herdrex-in-rex.png))
 
 ## Frameworks
 
