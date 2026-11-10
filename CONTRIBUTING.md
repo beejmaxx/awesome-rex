@@ -12,11 +12,11 @@ Please include only projects that:
 - link to their own repository or site, not to Rex downloads, invites, or beta-only channels;
 - have a README explaining what they do and how to install them.
 
-Keep descriptions factual, and list new entries at the end of their section.
+Keep descriptions factual, and list new entries at the end of their section. Leave off the star count: a weekly job adds it.
 
 ## Maintaining
 
-`scripts/new-from-export.py` lists GitHub repositories mentioned in a Discord channel export (DiscordChatExporter JSON) that aren't in the list yet. CI runs `awesome-lint` on every change and checks all links every Monday.
+`scripts/new-from-export.py` lists GitHub repositories mentioned in a Discord channel export (DiscordChatExporter JSON) that aren't in the list yet. CI runs `awesome-lint` on every change and checks all links every Monday. On Sundays, the Stars workflow runs `scripts/update-stars.py` to refresh each entry's trailing `(★ N)` count and commits the result. To refresh counts locally with your `gh` login, run `python3 scripts/update-stars.py`, or add `--check` to report stale counts without writing. After reorganizing sections or a large update, refresh the README preview image with `python3 scripts/render-images.py` (uses headless Google Chrome); add `--since REV --announcement PATH` to also render an image of the projects added since a revision.
 
 To refresh from showcase, install [DiscordChatExporter](https://github.com/Tyrrrz/DiscordChatExporter) and run:
 
@@ -48,7 +48,7 @@ An agent can scan an existing export without credentials or another download:
 python3 scripts/update-from-showcase.py --from-export /path/to/export/json/
 ```
 
-The scanner compares exact repository names with the README and keeps each candidate's earliest mention, author, and source message link. It finds GitHub repository links in message text and embed URLs; it does not discover standalone websites or gists. Review candidates against the contribution criteria before adding them. Neither command edits the README, commits, pushes, or posts to Discord.
+The scanner compares exact repository names with the README (scheduled runs also resolve GitHub renames and skip repositories with open pull requests) and keeps each candidate's earliest mention, author, and source message link. It finds GitHub repository links in message text and embed URLs; it does not discover standalone websites or gists. Review candidates against the contribution criteria before adding them. Neither command edits the README, commits, pushes, or posts to Discord.
 
 After reviewing the public projects, add qualifying entries to the appropriate README sections and validate the update:
 
