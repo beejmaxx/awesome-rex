@@ -89,6 +89,7 @@ Everything here is a public project built on Rex's documented Lua config, CLI, a
 - [lazyrex.nvim](https://github.com/omenlog/lazyrex) - Opens a persistent LazyGit float from Neovim in Rex, returning selected files to the originating editor while preserving LazyGit's state.
 - [colorrex.nvim](https://github.com/reklai/colorrex.nvim) - Builds a Neovim colorscheme from Rex's terminal palette and updates it as the terminal theme changes.
 - [navigator.nvim](https://github.com/omenlog/neovim-navigator) - Moves focus between Neovim splits and Rex panes with configured directional keybindings, generating matching Rex bindings.
+- [lazyrex.nvim](https://github.com/omenlog/lazyrex) - Full LazyGit integration for Rex and Neovim: keeps a stateful floating session, opens selected files and lines for editing in the originating Neovim instance, then minimizes and restores it.
 
 ## Code review
 
