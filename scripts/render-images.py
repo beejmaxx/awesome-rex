@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Render the README preview image, and optionally an update announcement, from README.md.
+"""Render images from README.md: an update announcement, and a summary card of every section.
 
-    scripts/render-images.py                                   # writes assets/preview.png
     scripts/render-images.py --since b6287c4 --announcement .local/update.png
+    scripts/render-images.py --preview .local/sections.png
 
-The preview shows each section with its project count and most-starred entries. The
+The summary card shows each section with its project count and most-starred entries.
+The README banner (assets/banner.jpg) is hand-made and not rendered here. The
 announcement lists the projects added since a Git revision, grouped by section, for
 posting to the showcase channel. Rendering uses headless Google Chrome (macOS path by
 default, or $CHROME) and looks best with JetBrains Mono installed.
@@ -126,7 +127,7 @@ def render(page, out, width, height):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--preview", type=Path, default=ROOT / "assets/preview.png")
+    parser.add_argument("--preview", type=Path, help="Where to write the section summary card")
     parser.add_argument("--since", help="Git revision to compare against for the announcement")
     parser.add_argument("--announcement", type=Path, help="Where to write the announcement image")
     parser.add_argument("--merged-prs", type=int, default=0, help="Community PRs merged since --since")
@@ -135,7 +136,10 @@ def main():
     args = parser.parse_args()
     sections = parse((ROOT / "README.md").read_text(encoding="utf-8"))
     attach_stars(sections)
-    render(preview(sections), args.preview.resolve(), 1600, 750)
+    if not (args.preview or args.announcement):
+        parser.error("pass --preview PATH, --announcement PATH, or both")
+    if args.preview:
+        render(preview(sections), args.preview.resolve(), 1600, 750)
     if args.announcement:
         if not args.since:
             parser.error("--announcement needs --since")
