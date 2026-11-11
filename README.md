@@ -99,6 +99,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [lazyrex.nvim](https://github.com/omenlog/lazyrex) - Persistent LazyGit float that opens files in the originating Neovim. ![Stars](https://img.shields.io/github/stars/omenlog/lazyrex?style=social)
 - [vim-rex-navigator](https://github.com/pankrashin/vim-rex-navigator) - Focus, move, resize, and close Vim windows and Rex panes with the same keys. ![Stars](https://img.shields.io/github/stars/pankrashin/vim-rex-navigator?style=social)
 - [rex-runner.nvim](https://github.com/oligot/rex-runner.nvim) - Port of vim-tmux-runner: sends lines and commands to a scratch pane. ![Stars](https://img.shields.io/github/stars/oligot/rex-runner.nvim?style=social)
+- [Rexel](https://github.com/dakra/rexel) - Emacs client for attaching to Rex sessions and managing terminals through Ghostel. ![Stars](https://img.shields.io/github/stars/dakra/rexel?style=social)
 
 ## Code review
 
