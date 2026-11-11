@@ -123,6 +123,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-open](https://github.com/HaydenMeloche/rex-open) ![Stars](https://img.shields.io/github/stars/HaydenMeloche/rex-open?style=social) - Picks files, links, commands, and SQL from pane output to open or copy.
 - [rex-fzf-url](https://github.com/devert/rex-fzf-url) ![Stars](https://img.shields.io/github/stars/devert/rex-fzf-url?style=social) - Floating fzf picker for opening or copying URLs from pane scrollback.
 - [rex-fingers](https://github.com/xeind/rex-fingers) ![Stars](https://img.shields.io/github/stars/xeind/rex-fingers?style=social) - Letter hints to copy paths, URLs, and hashes from a pane, like tmux-fingers.
+- [fzf-rex](https://github.com/tru2dagame/fzf-rex) - Runs fzf in a native Rex popup, with tmux support and inline fallback. ([demo](https://github.com/tru2dagame/fzf-rex/blob/main/docs/assets/fzf-rex-demo.gif))
 
 ## Previews and media
 
