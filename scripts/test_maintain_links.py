@@ -12,11 +12,11 @@ BADGE = "![Stars](https://img.shields.io/github/stars/{}?style=social)"
 LINES = [
     "## Tools",
     "",
-    "- [kept](https://github.com/a/kept) - Stays. " + BADGE.format("a/kept"),
-    "- [moved](https://github.com/old/name) - Renamed. ([demo](https://github.com/old/name/blob/main/d.gif)) " + BADGE.format("old/name"),
-    "- [gone](https://github.com/b/gone) - Deleted. " + BADGE.format("b/gone"),
+    "- [kept](https://github.com/a/kept) " + BADGE.format("a/kept") + " - Stays.",
+    "- [moved](https://github.com/old/name) " + BADGE.format("old/name") + " - Renamed. ([demo](https://github.com/old/name/blob/main/d.gif))",
+    "- [gone](https://github.com/b/gone) " + BADGE.format("b/gone") + " - Deleted.",
     "- [sub](https://github.com/c/dots/tree/main/tool) - In a subdirectory.",
-    "- [unknown](https://github.com/d/flaky) - Lookup errored. " + BADGE.format("d/flaky"),
+    "- [unknown](https://github.com/d/flaky) " + BADGE.format("d/flaky") + " - Lookup errored.",
     "- [site](https://example.com) - Elsewhere.",
 ]
 CURRENT = {"a/kept": "a/kept", "old/name": "new/place", "b/gone": None, "c/dots": "c/dots"}
@@ -28,7 +28,7 @@ class MaintainTests(unittest.TestCase):
         moved = next(l for l in lines if l.startswith("- [moved]"))
         self.assertIn("(https://github.com/new/place)", moved)
         self.assertIn("github.com/new/place/blob/main/d.gif", moved)
-        self.assertTrue(moved.endswith(BADGE.format("new/place")), moved)
+        self.assertIn(") " + BADGE.format("new/place") + " - Renamed.", moved)
         self.assertNotIn("old/name", moved)
         self.assertFalse(any(l.startswith("- [gone]") for l in lines))
         self.assertEqual((renamed, removed, held), (["moved: old/name -> new/place"], ["gone"], []))

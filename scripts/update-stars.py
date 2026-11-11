@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Give every README.md entry that links to a GitHub repository a live star badge.
 
-Entries end with a shields.io badge in GitHub's own star-button style:
+The badge sits right after the name, in GitHub's own star-button style:
 
-    - [name](https://github.com/owner/repo) - What it does. ![Stars](https://img.shields.io/github/stars/owner/repo?style=social)
+    - [name](https://github.com/owner/repo) ![Stars](https://img.shields.io/github/stars/owner/repo?style=social) - What it does.
+
+awesome-lint only accepts that position when the description starts with a capital letter
+or code, so an entry whose description starts otherwise (say, "macOS ...") keeps its badge
+at the end of the line instead, and the result always passes lint.
 
 shields.io fetches the count each time the page loads, so counts never go stale.
 This script only adds missing badges, fixes ones whose URL no longer matches the
@@ -27,9 +31,10 @@ import sys
 from pathlib import Path
 
 README = Path(__file__).resolve().parents[1] / "README.md"
-ENTRY = re.compile(r"^- \[[^\]]+\]\(https://github\.com/([\w.-]+)/([\w.-]+?)(?:\.git)?/?\) - ")
+ENTRY = re.compile(r"^(- \[[^\]]+\]\(https://github\.com/([\w.-]+)/([\w.-]+?)(?:\.git)?/?\))"
+                   r"(?: !\[Stars\]\([^)\s]+\))? - (.*)$")
 OLD_TEXT = re.compile(r" \(★ [\d.]+k?\)$")
-BADGE = re.compile(r" !\[Stars\]\(https://img\.shields\.io/github/stars/[^)\s]+\)$")
+END_BADGE = re.compile(r" !\[Stars\]\(https://img\.shields\.io/github/stars/[^)\s]+\)$")
 BATCH = 50
 
 
@@ -42,7 +47,12 @@ def apply_badges(lines):
     for line in lines:
         match = ENTRY.match(line)
         if match:
-            line = OLD_TEXT.sub("", BADGE.sub("", line)) + " " + badge(match.group(1), match.group(2))
+            link, owner, repo, description = match.groups()
+            description = OLD_TEXT.sub("", END_BADGE.sub("", description))
+            if re.match(r"[A-Z`]", description):
+                line = f"{link} {badge(owner, repo)} - {description}"
+            else:
+                line = f"{link} - {description} {badge(owner, repo)}"
         updated.append(line)
     return updated
 
@@ -53,7 +63,7 @@ def repositories(lines):
     for line in lines:
         match = ENTRY.match(line)
         if match:
-            found.append(f"{match.group(1)}/{match.group(2)}".lower())
+            found.append(f"{match.group(2)}/{match.group(3)}".lower())
     return sorted(set(found))
 
 

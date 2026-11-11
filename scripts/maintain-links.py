@@ -29,7 +29,7 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ENTRY = re.compile(r"^- \[([^\]]+)\]\((https?://[^)\s]+)\) - ")
+ENTRY = re.compile(r"^- \[([^\]]+)\]\((https?://[^)\s]+)\)(?: !\[Stars\]\([^)\s]+\))? - ")
 GITHUB = re.compile(r"^https://github\.com/([\w.-]+)/([\w.-]+?)(?:\.git)?(?=/|$)")
 BATCH = 50
 spec = importlib.util.spec_from_file_location("stars", ROOT / "scripts/update-stars.py")

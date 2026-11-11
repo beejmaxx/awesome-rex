@@ -3,7 +3,7 @@
 Open a pull request that adds one line to the right section of `README.md`:
 
 ```
-- [name](link) - What it does, in a sentence or two.
+- [name](link) - What it does, in one short sentence.
 ```
 
 Please include only projects that:
@@ -12,11 +12,11 @@ Please include only projects that:
 - link to their own repository or site, not to Rex downloads, invites, or beta-only channels;
 - have a README explaining what they do and how to install them.
 
-Keep descriptions factual, and list new entries at the end of their section. Leave off the star badge: a workflow adds it after merging.
+Keep descriptions factual and start them with a capital letter ("Menu bar app for macOS", not "macOS menu bar app"). List new entries at the end of their section. Leave off the star badge: a workflow adds it after merging.
 
 ## Maintaining
 
-`scripts/new-from-export.py` lists GitHub repositories mentioned in a Discord channel export (DiscordChatExporter JSON) that aren't in the list yet. CI runs the unit tests and `awesome-lint` on every change, and pull requests also check the links they add. Every Monday, the Maintain workflow runs `scripts/maintain-links.py`: renamed repositories get their new URLs, deleted ones are removed, and links it can't repair are listed in the run summary. Only the scripts' own bugs can fail it. Entries that link to a GitHub repository end with a live shields.io star badge. Whenever `README.md` changes on `main`, the Stars workflow runs `scripts/update-stars.py` to add any missing badges and commits the result. Run it locally with `python3 scripts/update-stars.py`, or add `--check` to report missing badges without writing. To announce an update in the showcase channel, `python3 scripts/render-images.py --since REV --announcement PATH` renders the projects added since a revision, grouped by section (uses headless Google Chrome). `--preview PATH` renders a card of every section and its most-starred projects. The README banner (`assets/banner.jpg`) and the card GitHub shows when the repository link is shared (`assets/social-preview.png`, the same art under GitHub's 1 MB limit) are hand-made. GitHub has no API for the social preview, so upload changes under Settings > General > Social preview.
+`scripts/new-from-export.py` lists GitHub repositories mentioned in a Discord channel export (DiscordChatExporter JSON) that aren't in the list yet. CI runs the unit tests and `awesome-lint` on every change, and pull requests also check the links they add. Every Monday, the Maintain workflow runs `scripts/maintain-links.py`: renamed repositories get their new URLs, deleted ones are removed, and links it can't repair are listed in the run summary. Only the scripts' own bugs can fail it. Entries that link to a GitHub repository show a live shields.io star badge right after the name. Whenever `README.md` changes on `main`, the Stars workflow runs `scripts/update-stars.py` to add any missing badges and commits the result. Run it locally with `python3 scripts/update-stars.py`, or add `--check` to report missing badges without writing. To announce an update in the showcase channel, `python3 scripts/render-images.py --since REV --announcement PATH` renders the projects added since a revision, grouped by section (uses headless Google Chrome). `--preview PATH` renders a card of every section and its most-starred projects. The README banner (`assets/banner.jpg`) and the card GitHub shows when the repository link is shared (`assets/social-preview.png`, the same art under GitHub's 1 MB limit) are hand-made. GitHub has no API for the social preview, so upload changes under Settings > General > Social preview.
 
 To refresh from showcase, install [DiscordChatExporter](https://github.com/Tyrrrz/DiscordChatExporter) and run:
 
