@@ -2,7 +2,7 @@
 
 ![awesome-rex: tools, plugins and integrations for Rex](assets/banner.jpg)
 
-A curated list of public tools, plugins, and integrations for Rex, the terminal workspace by Superlogical, built on its documented Lua config, CLI, and server API. Rex is in closed beta, so most of these are early and move fast. *demo* links go to a GIF, video, or screenshot.
+A curated list of public tools, plugins, and integrations for Rex, the terminal workspace by Superlogical, built on its documented Lua config, CLI, and server API. Rex is in closed beta, so most of these are early and move fast. _demo_ links go to a GIF, video, or screenshot.
 
 ## Contents
 
@@ -100,6 +100,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [vim-rex-navigator](https://github.com/pankrashin/vim-rex-navigator) ![Stars](https://img.shields.io/github/stars/pankrashin/vim-rex-navigator?style=social) - Focus, move, resize, and close Vim windows and Rex panes with the same keys.
 - [rex-runner.nvim](https://github.com/oligot/rex-runner.nvim) ![Stars](https://img.shields.io/github/stars/oligot/rex-runner.nvim?style=social) - Port of vim-tmux-runner: sends lines and commands to a scratch pane.
 - [Rexel](https://github.com/dakra/rexel) ![Stars](https://img.shields.io/github/stars/dakra/rexel?style=social) - Emacs client for attaching to Rex sessions and managing terminals through Ghostel.
+- [sidekick-rex.nvim](https://github.com/gonstoll/sidekick-rex.nvim) ![Stars](https://img.shields.io/github/stars/gonstoll/sidekick-rex.nvim?style=social) - Sidekick.nvim extension to work with Rex as a mux backend
 
 ## Code review
 
