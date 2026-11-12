@@ -135,6 +135,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-typst](https://github.com/CiaranMcDonnell/rex-typst) ![Stars](https://img.shields.io/github/stars/CiaranMcDonnell/rex-typst?style=social) - Live Typst preview in a Rex pane, including unsaved Neovim buffers.
 - [scrcpyt](https://github.com/leset0ng/scrcpyt) ![Stars](https://img.shields.io/github/stars/leset0ng/scrcpyt?style=social) - Mirrors and controls Android devices in Rex through scrcpy and Kitty graphics.
 - [rex-sim](https://github.com/wobsoriano/rex-sim) ![Stars](https://img.shields.io/github/stars/wobsoriano/rex-sim?style=social) - Shows and controls iOS simulators and Android emulators in panes on macOS.
+- [rexsim](https://github.com/krozniata/rexsim) - Lets coding agents open iOS simulators and Android emulators in a pane beside them. ([demo](https://github.com/krozniata/rexsim/blob/main/docs/demo.gif))
 
 ## Themes and appearance
 
