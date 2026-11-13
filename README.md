@@ -52,6 +52,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [Rexling](https://github.com/shulhi/rexling) ![Stars](https://img.shields.io/github/stars/shulhi/rexling?style=social) - Unofficial Android client for Rex terminals across servers over Tailscale.
 - [rexc](https://github.com/Nam0101/rexc) ![Stars](https://img.shields.io/github/stars/Nam0101/rexc?style=social) - Android client with sessions, terminals, and an inbox for blocked agents.
 - [Rhubarb](https://github.com/Joshua-Wise/rhubarb) ![Stars](https://img.shields.io/github/stars/Joshua-Wise/rhubarb?style=social) - Unofficial Android client with live terminals and agent alerts over Tailscale.
+- [Chompy](https://github.com/jeffarese/chompy) - Unofficial Android client with an agent board and terminal access across Rex servers.
 
 ## Coding agents
 
