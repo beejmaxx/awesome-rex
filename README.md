@@ -142,6 +142,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-themes](https://github.com/AlbertoBarrago/rex-themes) ![Stars](https://img.shields.io/github/stars/AlbertoBarrago/rex-themes?style=social) - Theme library and CLI for previewing and importing Rex themes.
 - [rex-theme-importer](https://github.com/alexrlocke/rex-theme-importer) ![Stars](https://img.shields.io/github/stars/alexrlocke/rex-theme-importer?style=social) - Fzf picker for previewing Ghostty themes and importing them into Rex.
 - [rexeme](https://github.com/DeepanshuMishraa/rexeme) ![Stars](https://img.shields.io/github/stars/DeepanshuMishraa/rexeme?style=social) - Applies Rex's theme to 52 editors, terminals, and CLI tools on macOS.
+- [rex-statusline](https://github.com/kenbanks-peng/rex-statusline) ![Stars](https://img.shields.io/github/stars/kenbanks-peng/rex-statusline?style=social) - Oh My Posh status line shared by Rex terminal splits.
 
 ## Workflow utilities
 
