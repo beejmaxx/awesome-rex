@@ -159,6 +159,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [RexDeck](https://github.com/Mathews-Tom/RexDeck) ![Stars](https://img.shields.io/github/stars/Mathews-Tom/RexDeck?style=social) - Opt-in integrations for terminal tools and API views in native panes.
 - [Herdrex](https://github.com/elonnzhang/Herdrex) ![Stars](https://img.shields.io/github/stars/elonnzhang/Herdrex?style=social) - Serves a Herdr server as a Rex host, so Rex.app can drive Herdr's panes. ([demo](https://github.com/elonnzhang/Herdrex/blob/main/imgs/herdrex-in-rex.png))
 - [Pulse for Rex](https://github.com/fatwang2/Pulse/tree/main/rex) - Shows stock and crypto watchlists with price charts in a Rex pane.
+- [smart-title-rex](https://github.com/TaterDoge/smart-title-rex) - Renames each tab automatically from the focused terminal's recent output, using an OpenAI-compatible model. ([demo](https://github.com/TaterDoge/smart-title-rex/blob/main/docs/demo.gif))
 
 ## Frameworks
 
