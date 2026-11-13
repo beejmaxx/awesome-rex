@@ -70,6 +70,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [tr3x](https://github.com/macnason/tr3x) ![Stars](https://img.shields.io/github/stars/macnason/tr3x?style=social) - Shows T3 Code conversations as Rex tabs, with replies sent back to T3.
 - [barbasol-can](https://github.com/pthm/barbasol-can) ![Stars](https://img.shields.io/github/stars/pthm/barbasol-can?style=social) - Moves Claude Code, Codex, and OpenCode conversations to another Rex host.
 - [rex-claude](https://www.aitmpl.com/component/skill/productivity/rex-claude) - Claude Code skill that opens and drives other Claude Code sessions in panes.
+- [pi-rex-agents](https://github.com/JohnWJ-co/pi-rex-agents) ![Stars](https://img.shields.io/github/stars/JohnWJ-co/pi-rex-agents?style=social) - Runs Pi subagents in Rex panes, tabs, or minimized layers and returns results automatically.
 
 ## Agent dashboards
 
@@ -135,6 +136,9 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-typst](https://github.com/CiaranMcDonnell/rex-typst) ![Stars](https://img.shields.io/github/stars/CiaranMcDonnell/rex-typst?style=social) - Live Typst preview in a Rex pane, including unsaved Neovim buffers.
 - [scrcpyt](https://github.com/leset0ng/scrcpyt) ![Stars](https://img.shields.io/github/stars/leset0ng/scrcpyt?style=social) - Mirrors and controls Android devices in Rex through scrcpy and Kitty graphics.
 - [rex-sim](https://github.com/wobsoriano/rex-sim) ![Stars](https://img.shields.io/github/stars/wobsoriano/rex-sim?style=social) - Shows and controls iOS simulators and Android emulators in panes on macOS.
+- [rex-md-viewer](https://github.com/zztkm/rex-md-viewer) ![Stars](https://img.shields.io/github/stars/zztkm/rex-md-viewer?style=social) - Previews Markdown in a reusable Rex split pane with live updates.
+- [Leaf](https://github.com/DeepanshuMishraa/leaf) ![Stars](https://img.shields.io/github/stars/DeepanshuMishraa/leaf?style=social) - Reads documents and reviews diffs in Rex, with selections sent to coding agents.
+- [mddog](https://github.com/qu8n/mddog) ![Stars](https://img.shields.io/github/stars/qu8n/mddog?style=social) - Renders Markdown with images, diagrams, and live reload in Rex on macOS.
 
 ## Themes and appearance
 
@@ -154,6 +158,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [heypad](https://github.com/travelingflwr/heypad) ![Stars](https://img.shields.io/github/stars/travelingflwr/heypad?style=social) - HEY email client rendered in Rex panes.
 - [RexDeck](https://github.com/Mathews-Tom/RexDeck) ![Stars](https://img.shields.io/github/stars/Mathews-Tom/RexDeck?style=social) - Opt-in integrations for terminal tools and API views in native panes.
 - [Herdrex](https://github.com/elonnzhang/Herdrex) ![Stars](https://img.shields.io/github/stars/elonnzhang/Herdrex?style=social) - Serves a Herdr server as a Rex host, so Rex.app can drive Herdr's panes. ([demo](https://github.com/elonnzhang/Herdrex/blob/main/imgs/herdrex-in-rex.png))
+- [Pulse for Rex](https://github.com/fatwang2/Pulse/tree/main/rex) - Shows stock and crypto watchlists with price charts in a Rex pane.
 
 ## Frameworks
 
