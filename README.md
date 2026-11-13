@@ -165,6 +165,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [LazyRex](https://github.com/lazy-rex/LazyRex) ![Stars](https://img.shields.io/github/stars/lazy-rex/LazyRex?style=social) - Plugin hub with versioned plugins, dependencies, and cross-server messaging.
 - [Amber](https://github.com/rawnly/amber) ![Stars](https://img.shields.io/github/stars/rawnly/amber?style=social) - Lua plugin manager with versions and a lockfile, formerly Rex Plugin Manager.
 - [rexuikit](https://github.com/dphaener/rexuikit) ![Stars](https://img.shields.io/github/stars/dphaener/rexuikit?style=social) - Go toolkit for building Rex UIs: floating layers, splits, forms, and dialogs.
+- [lazy.rex](https://github.com/TaterDoge/lazy.rex) - Lazy.nvim-style plugin manager for Rex: declarative specs, Lua module imports, and self-install on first startup.
 
 ## Fun
 
