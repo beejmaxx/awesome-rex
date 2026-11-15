@@ -111,6 +111,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rexamine](https://github.com/segersniels/rexamine) ![Stars](https://img.shields.io/github/stars/segersniels/rexamine?style=social) - Review local changes or a GitHub PR and send line comments to your agent. ([demo](https://github.com/segersniels/rexamine/blob/main/assets/demo.gif))
 - [rex.nvim](https://github.com/rawnly/rex.nvim) ![Stars](https://img.shields.io/github/stars/rawnly/rex.nvim?style=social) - Annotate code in Neovim and send comments to a coding agent in Rex. ([demo](https://github.com/user-attachments/assets/47bc945d-6377-4df5-80a6-93bd219fd1b6))
 - [rex-relay.nvim](https://github.com/crierr/rex-relay.nvim) ![Stars](https://img.shields.io/github/stars/crierr/rex-relay.nvim?style=social) - Sends file:line references and review comments from Neovim to agents in Rex.
+- [Annorex](https://github.com/devararishivian/annorex) - Annotate the replies and files of Claude Code, Pi, and OpenCode in a Rex pane and send the notes back.
 
 ## Pickers and navigation
 
