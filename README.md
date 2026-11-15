@@ -36,6 +36,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [hatch](https://github.com/gcacoutinho/rex-hatch) ![Stars](https://img.shields.io/github/stars/gcacoutinho/rex-hatch?style=social) - Creates sessions from per-project Lua layout files, with an fzf picker.
 - [ghostmux](https://github.com/jackkeller/ghostmux) ![Stars](https://img.shields.io/github/stars/jackkeller/ghostmux?style=social) - Launches YAML-defined sessions, tabs, and pane layouts on macOS.
 - [lazyrex](https://github.com/rbobillot/lazyrex) ![Stars](https://img.shields.io/github/stars/rbobillot/lazyrex?style=social) - Terminal UI for managing sessions, windows, and panes across Rex servers.
+- [summon](https://github.com/juan294/summon) - CLI that launches configurable multi-pane project workspaces as Rex sessions, with layout presets and a setup wizard.
 
 ## Recovery
 
