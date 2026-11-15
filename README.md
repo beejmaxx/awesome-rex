@@ -71,6 +71,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [barbasol-can](https://github.com/pthm/barbasol-can) ![Stars](https://img.shields.io/github/stars/pthm/barbasol-can?style=social) - Moves Claude Code, Codex, and OpenCode conversations to another Rex host.
 - [rex-claude](https://www.aitmpl.com/component/skill/productivity/rex-claude) - Claude Code skill that opens and drives other Claude Code sessions in panes.
 - [pi-rex-agents](https://github.com/JohnWJ-co/pi-rex-agents) ![Stars](https://img.shields.io/github/stars/JohnWJ-co/pi-rex-agents?style=social) - Runs Pi subagents in Rex panes, tabs, or minimized layers and returns results automatically.
+- [rex-teams](https://github.com/campfireshuffle/rex-teams) - Agent-agnostic skill for subagents, teammate messaging, and one-time or recurring alarms. ([demo](https://github.com/campfireshuffle/rex-teams/blob/main/media/hero.webp))
 
 ## Agent dashboards
 
