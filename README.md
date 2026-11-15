@@ -88,6 +88,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [agentmeter](https://github.com/SaeedNoshadi89/agentmeter) ![Stars](https://img.shields.io/github/stars/SaeedNoshadi89/agentmeter?style=social) - Shows remaining Claude Code and Codex usage limits in a popup or pane.
 - [Rex's Tail](https://github.com/travelingflwr/rex-tail) ![Stars](https://img.shields.io/github/stars/travelingflwr/rex-tail?style=social) - Panel beside Rex on macOS showing agent activity and weather (build from source).
 - [rex-agents](https://github.com/irfn/rex-agents) ![Stars](https://img.shields.io/github/stars/irfn/rex-agents?style=social) - Agent sidebar across hosts that jumps to agents waiting for input.
+- [rex-agy-subagent](https://github.com/daehyeok/rex-agy-subagent) - Floating panel showing Antigravity (`agy`) subagent trees and live transcripts across hosts. ([demo](https://github.com/daehyeok/rex-agy-subagent/blob/main/docs/demo.gif))
 
 ## Editors
 
@@ -124,6 +125,8 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-open](https://github.com/HaydenMeloche/rex-open) ![Stars](https://img.shields.io/github/stars/HaydenMeloche/rex-open?style=social) - Picks files, links, commands, and SQL from pane output to open or copy.
 - [rex-fzf-url](https://github.com/devert/rex-fzf-url) ![Stars](https://img.shields.io/github/stars/devert/rex-fzf-url?style=social) - Floating fzf picker for opening or copying URLs from pane scrollback.
 - [rex-fingers](https://github.com/xeind/rex-fingers) ![Stars](https://img.shields.io/github/stars/xeind/rex-fingers?style=social) - Letter hints to copy paths, URLs, and hashes from a pane, like tmux-fingers.
+- [rex-file-picker](https://github.com/daehyeok/rex-file-picker) - Floating fzf file and directory picker with previews for local and remote panes. ([demo](https://github.com/daehyeok/rex-file-picker/blob/main/docs/demo.gif))
+- [rex-fzf-links](https://github.com/daehyeok/rex-fzf-links) - Floating fzf picker for URLs, files, and custom patterns with context previews on macOS. ([demo](https://github.com/daehyeok/rex-fzf-links/blob/main/docs/demo.gif))
 
 ## Previews and media
 
