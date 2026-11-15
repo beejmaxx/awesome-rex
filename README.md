@@ -101,6 +101,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [vim-rex-navigator](https://github.com/pankrashin/vim-rex-navigator) ![Stars](https://img.shields.io/github/stars/pankrashin/vim-rex-navigator?style=social) - Focus, move, resize, and close Vim windows and Rex panes with the same keys.
 - [rex-runner.nvim](https://github.com/oligot/rex-runner.nvim) ![Stars](https://img.shields.io/github/stars/oligot/rex-runner.nvim?style=social) - Port of vim-tmux-runner: sends lines and commands to a scratch pane.
 - [Rexel](https://github.com/dakra/rexel) ![Stars](https://img.shields.io/github/stars/dakra/rexel?style=social) - Emacs client for attaching to Rex sessions and managing terminals through Ghostel.
+- [vim-dispatch-extras](https://github.com/trekdemo/vim-dispatch-extras) - Rex strategy for [dispatch.vim](https://github.com/tpope/vim-dispatch) that runs `:Make` in a Rex block and loads its output into quickfix.
 
 ## Code review
 
