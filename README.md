@@ -36,6 +36,8 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [hatch](https://github.com/gcacoutinho/rex-hatch) ![Stars](https://img.shields.io/github/stars/gcacoutinho/rex-hatch?style=social) - Creates sessions from per-project Lua layout files, with an fzf picker.
 - [ghostmux](https://github.com/jackkeller/ghostmux) ![Stars](https://img.shields.io/github/stars/jackkeller/ghostmux?style=social) - Launches YAML-defined sessions, tabs, and pane layouts on macOS.
 - [lazyrex](https://github.com/rbobillot/lazyrex) ![Stars](https://img.shields.io/github/stars/rbobillot/lazyrex?style=social) - Terminal UI for managing sessions, windows, and panes across Rex servers.
+- [rex-workspaces](https://github.com/agarun/rex-workspaces) ![Stars](https://img.shields.io/github/stars/agarun/rex-workspaces?style=social) - Saves and launches Rex workspaces with pane layouts, folders, and commands.
+- [Raptor](https://github.com/alienxp03/raptor) ![Stars](https://img.shields.io/github/stars/alienxp03/raptor?style=social) - Launcher for macOS that opens Rex sessions, projects, and Git worktrees.
 
 ## Recovery
 
@@ -45,6 +47,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-agent-archive](https://github.com/unknowntheory/rex-agent-archive) ![Stars](https://img.shields.io/github/stars/unknowntheory/rex-agent-archive?style=social) - Archives Claude Code and Codex conversations when tabs close, to resume later.
 - [rex-agent-resume](https://github.com/YangJonghun/rex-agent-resume) ![Stars](https://img.shields.io/github/stars/YangJonghun/rex-agent-resume?style=social) - Resumes coding agents in their original panes after a server restart on macOS.
 - [rex-restore-claude](https://github.com/marfillaster/rex-restore-claude) ![Stars](https://img.shields.io/github/stars/marfillaster/rex-restore-claude?style=social) - Puts a Claude Code resume command in each pane's prompt after a restart.
+- [rex-recover](https://github.com/nexxai/rex-recover) ![Stars](https://img.shields.io/github/stars/nexxai/rex-recover?style=social) - Relaunches monitored commands in their original terminals after a Rex server restart.
 
 ## Mobile clients
 
@@ -71,6 +74,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [barbasol-can](https://github.com/pthm/barbasol-can) ![Stars](https://img.shields.io/github/stars/pthm/barbasol-can?style=social) - Moves Claude Code, Codex, and OpenCode conversations to another Rex host.
 - [rex-claude](https://www.aitmpl.com/component/skill/productivity/rex-claude) - Claude Code skill that opens and drives other Claude Code sessions in panes.
 - [pi-rex-agents](https://github.com/JohnWJ-co/pi-rex-agents) ![Stars](https://img.shields.io/github/stars/JohnWJ-co/pi-rex-agents?style=social) - Runs Pi subagents in Rex panes, tabs, or minimized layers and returns results automatically.
+- [rexagents](https://github.com/fcibecchini/rexagents) ![Stars](https://img.shields.io/github/stars/fcibecchini/rexagents?style=social) - Opens Claude Code background sessions in Rex panes and reports their Activity status.
 
 ## Agent dashboards
 
@@ -88,6 +92,8 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [agentmeter](https://github.com/SaeedNoshadi89/agentmeter) ![Stars](https://img.shields.io/github/stars/SaeedNoshadi89/agentmeter?style=social) - Shows remaining Claude Code and Codex usage limits in a popup or pane.
 - [Rex's Tail](https://github.com/travelingflwr/rex-tail) ![Stars](https://img.shields.io/github/stars/travelingflwr/rex-tail?style=social) - Panel beside Rex on macOS showing agent activity and weather (build from source).
 - [rex-agents](https://github.com/irfn/rex-agents) ![Stars](https://img.shields.io/github/stars/irfn/rex-agents?style=social) - Agent sidebar across hosts that jumps to agents waiting for input.
+- [DeckShep](https://github.com/kotler/DeckShep) ![Stars](https://img.shields.io/github/stars/kotler/DeckShep?style=social) - Stream Deck controller for Codex and Claude Code sessions in Rex on macOS.
+- [magi](https://github.com/felitrejos/magi) ![Stars](https://img.shields.io/github/stars/felitrejos/magi?style=social) - Monitors and controls Claude Code and Codex sessions across machines from a Rex pane.
 
 ## Editors
 
@@ -165,10 +171,12 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [LazyRex](https://github.com/lazy-rex/LazyRex) ![Stars](https://img.shields.io/github/stars/lazy-rex/LazyRex?style=social) - Plugin hub with versioned plugins, dependencies, and cross-server messaging.
 - [Amber](https://github.com/rawnly/amber) ![Stars](https://img.shields.io/github/stars/rawnly/amber?style=social) - Lua plugin manager with versions and a lockfile, formerly Rex Plugin Manager.
 - [rexuikit](https://github.com/dphaener/rexuikit) ![Stars](https://img.shields.io/github/stars/dphaener/rexuikit?style=social) - Go toolkit for building Rex UIs: floating layers, splits, forms, and dialogs.
+- [rexui](https://github.com/Akzestia/rexui) ![Stars](https://img.shields.io/github/stars/Akzestia/rexui?style=social) - UI library for Rex with a macOS app and bundled designs.
 
 ## Fun
 
 - [rex-orbit](https://github.com/benhid/rex-orbit) ![Stars](https://img.shields.io/github/stars/benhid/rex-orbit?style=social) - Your Claude Code agents as pixel bots orbiting a dinosaur. ([demo](https://github.com/benhid/rex-orbit/blob/main/assets/demo-light.png))
+- [pokemon-rex](https://github.com/anthonymq/pokemon-rex) ![Stars](https://img.shields.io/github/stars/anthonymq/pokemon-rex?style=social) - Pokedex sidebar that gives coding agents Pokemon partners and rewards completed tasks with XP.
 
 ## Official resources
 
