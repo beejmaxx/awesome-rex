@@ -80,6 +80,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rexagents](https://github.com/fcibecchini/rexagents) ![Stars](https://img.shields.io/github/stars/fcibecchini/rexagents?style=social) - Opens Claude Code background sessions in Rex panes and reports their Activity status.
 - [pi-rex-terminal](https://github.com/schpet/pi-rex-terminal) ![Stars](https://img.shields.io/github/stars/schpet/pi-rex-terminal?style=social) - Pi extension that opens your own shell through Rex in the agent's input area. ([demo](https://github.com/schpet/pi-rex-terminal/blob/main/docs/assets/pi-rex-terminal-demo.mp4))
 - [rex-teams](https://github.com/campfireshuffle/rex-teams) ![Stars](https://img.shields.io/github/stars/campfireshuffle/rex-teams?style=social) - Skill that lets agents spawn subagents in Rex tabs and collect their reports. ([demo](https://github.com/campfireshuffle/rex-teams/blob/main/media/hero.webp))
+- [rex-tab-status](https://github.com/DaanRosendal/rex-tab-status) - Shows which agent needs you from the tab bar, with ⏳ working, ❓ waiting, ✅ done or ❌ failed in each tab label.
 
 ## Agent dashboards
 
