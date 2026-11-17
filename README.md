@@ -8,7 +8,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 
 - [Sessions and workspaces](#sessions-and-workspaces)
 - [Recovery](#recovery)
-- [Mobile clients](#mobile-clients)
+- [Clients](#clients)
 - [Coding agents](#coding-agents)
 - [Agent dashboards](#agent-dashboards)
 - [Editors](#editors)
@@ -49,12 +49,13 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-restore-claude](https://github.com/marfillaster/rex-restore-claude) ![Stars](https://img.shields.io/github/stars/marfillaster/rex-restore-claude?style=social) - Puts a Claude Code resume command in each pane's prompt after a restart.
 - [rex-recover](https://github.com/nexxai/rex-recover) ![Stars](https://img.shields.io/github/stars/nexxai/rex-recover?style=social) - Relaunches monitored commands in their original terminals after a Rex server restart.
 
-## Mobile clients
+## Clients
 
 - [RexPocket](https://github.com/leizhiyuan/rexpocket) ![Stars](https://img.shields.io/github/stars/leizhiyuan/rexpocket?style=social) - Android client for browsing sessions and sending input (build from source).
 - [Rexling](https://github.com/shulhi/rexling) ![Stars](https://img.shields.io/github/stars/shulhi/rexling?style=social) - Unofficial Android client for Rex terminals across servers over Tailscale.
 - [rexc](https://github.com/Nam0101/rexc) ![Stars](https://img.shields.io/github/stars/Nam0101/rexc?style=social) - Android client with sessions, terminals, and an inbox for blocked agents.
 - [Rhubarb](https://github.com/Joshua-Wise/rhubarb) ![Stars](https://img.shields.io/github/stars/Joshua-Wise/rhubarb?style=social) - Unofficial Android client with live terminals and agent alerts over Tailscale.
+- [rexia](https://github.com/hackrdotsh/rexia) - Unofficial native Linux client built on GPUI, themed by Noctalia (build from source).
 
 ## Coding agents
 
@@ -75,6 +76,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-claude](https://www.aitmpl.com/component/skill/productivity/rex-claude) - Claude Code skill that opens and drives other Claude Code sessions in panes.
 - [pi-rex-agents](https://github.com/JohnWJ-co/pi-rex-agents) ![Stars](https://img.shields.io/github/stars/JohnWJ-co/pi-rex-agents?style=social) - Runs Pi subagents in Rex panes, tabs, or minimized layers and returns results automatically.
 - [rexagents](https://github.com/fcibecchini/rexagents) ![Stars](https://img.shields.io/github/stars/fcibecchini/rexagents?style=social) - Opens Claude Code background sessions in Rex panes and reports their Activity status.
+- [pi-rex-terminal](https://github.com/schpet/pi-rex-terminal) - Pi extension that opens your own shell through Rex in the agent's input area. ([demo](https://github.com/schpet/pi-rex-terminal/blob/main/docs/assets/pi-rex-terminal-demo.mp4))
 
 ## Agent dashboards
 
