@@ -115,6 +115,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [Rexel](https://github.com/dakra/rexel) ![Stars](https://img.shields.io/github/stars/dakra/rexel?style=social) - Emacs client for attaching to Rex sessions and managing terminals through Ghostel.
 - [sidekick-rex.nvim](https://github.com/gonstoll/sidekick-rex.nvim) ![Stars](https://img.shields.io/github/stars/gonstoll/sidekick-rex.nvim?style=social) - Lets sidekick.nvim use Rex as its terminal multiplexer backend.
 - [vim-dispatch-extras](https://github.com/trekdemo/vim-dispatch-extras) ![Stars](https://img.shields.io/github/stars/trekdemo/vim-dispatch-extras?style=social) - Rex strategy for [dispatch.vim](https://github.com/tpope/vim-dispatch) that runs `:Make` in a Rex block and loads its output into quickfix.
+- [neopane](https://github.com/spiritledsoftware/neopane) ![Stars](https://img.shields.io/github/stars/spiritledsoftware/neopane?style=social) - Opens Neovim windows as native Rex panes sharing one editor process.
 
 ## Code review
 
