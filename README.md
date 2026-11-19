@@ -181,7 +181,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [Herdrex](https://github.com/elonnzhang/Herdrex) ![Stars](https://img.shields.io/github/stars/elonnzhang/Herdrex?style=social) - Serves a Herdr server as a Rex host, so Rex.app can drive Herdr's panes. ([demo](https://github.com/elonnzhang/Herdrex/blob/main/imgs/herdrex-in-rex.png))
 - [Pulse for Rex](https://github.com/fatwang2/Pulse/tree/main/rex) - Shows stock and crypto watchlists with price charts in a Rex pane.
 - [smart-title-rex](https://github.com/TaterDoge/smart-title-rex) ![Stars](https://img.shields.io/github/stars/TaterDoge/smart-title-rex?style=social) - Renames tabs from the focused terminal's recent output, using an OpenAI-compatible model. ([demo](https://github.com/TaterDoge/smart-title-rex/blob/main/docs/demo.gif))
-- [rex-herdr-keybinding](https://github.com/kvoon3/rex-herdr-keybinding) - Ports herdr's ctrl+b keymap to Rex, with a CLI installer.
+- [rex-herdr-keybinding](https://github.com/kvoon3/rex-herdr-keybinding) - Use [Herdr Keybind](https://herdr.dev/tui/docs/keyboard/) in Rex.
 
 ## Frameworks
 
