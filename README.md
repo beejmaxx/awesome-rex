@@ -159,6 +159,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [Leaf](https://github.com/DeepanshuMishraa/leaf) ![Stars](https://img.shields.io/github/stars/DeepanshuMishraa/leaf?style=social) - Reads documents and reviews diffs in Rex, with selections sent to coding agents.
 - [mddog](https://github.com/qu8n/mddog) ![Stars](https://img.shields.io/github/stars/qu8n/mddog?style=social) - Renders Markdown with images, diagrams, and live reload in Rex on macOS.
 - [rexsim](https://github.com/krozniata/rexsim) ![Stars](https://img.shields.io/github/stars/krozniata/rexsim?style=social) - Lets coding agents open iOS simulators and Android emulators in a pane beside them. ([demo](https://github.com/krozniata/rexsim/blob/main/docs/demo.gif))
+- [rdxt](https://github.com/travelingflwr/rex-doc) - Reads and edits Markdown and Dok files as real text, with links between documents, figures, and Cmd-click to open.
 
 ## Themes and appearance
 
