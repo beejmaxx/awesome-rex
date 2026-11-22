@@ -85,6 +85,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [pi-rex-terminal](https://github.com/schpet/pi-rex-terminal) ![Stars](https://img.shields.io/github/stars/schpet/pi-rex-terminal?style=social) - Pi extension that opens your own shell through Rex in the agent's input area. ([demo](https://github.com/schpet/pi-rex-terminal/blob/main/docs/assets/pi-rex-terminal-demo.mp4))
 - [rex-teams](https://github.com/campfireshuffle/rex-teams) ![Stars](https://img.shields.io/github/stars/campfireshuffle/rex-teams?style=social) - Skill that lets agents spawn subagents in Rex tabs and collect their reports. ([demo](https://github.com/campfireshuffle/rex-teams/blob/main/media/hero.webp))
 - [rex-config](https://github.com/johnstegeman/rex-config) ![Stars](https://img.shields.io/github/stars/johnstegeman/rex-config?style=social) - Claims beads and launches agents in new worktree tabs using worktrunk and native prompts.
+- [tackroom](https://github.com/yourconscience/tackroom) - Syncs skills, MCP servers and hooks across coding agents, with a Rex workspace for its status and crons.
 
 ## Agent dashboards
 
