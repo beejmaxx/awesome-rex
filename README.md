@@ -63,6 +63,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [Chompy](https://github.com/jeffarese/chompy) ![Stars](https://img.shields.io/github/stars/jeffarese/chompy?style=social) - Unofficial Android client with an agent board and terminal access across Rex servers.
 - [Rexling M](https://github.com/mikeyobrien/rexling) ![Stars](https://img.shields.io/github/stars/mikeyobrien/rexling?style=social) - Android fork of Rexling with a unified switcher and layouts for phones and foldables.
 - [ColliePWA](https://github.com/AltanS/collie) ![Stars](https://img.shields.io/github/stars/AltanS/collie?style=social) - Self-hosted mobile web app with experimental support for reading and replying to agents in Rex.
+- [Rex Rune](https://github.com/shuv1337/rex-rune) - Unofficial native Linux client for working in local and remote Rex sessions. ([demo](https://github.com/shuv1337/rex-rune/blob/master/docs/screenshot.png))
 
 ## Coding agents
 
