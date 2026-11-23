@@ -91,6 +91,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [pi-rex-shell](https://github.com/maxpaulus43/pi-rex-shell) ![Stars](https://img.shields.io/github/stars/maxpaulus43/pi-rex-shell?style=social) - Runs background shell jobs in interactive Rex panes and returns their output to Pi.
 - [rex-tg](https://github.com/arrokh/rex-tg) ![Stars](https://img.shields.io/github/stars/arrokh/rex-tg?style=social) - Connects Telegram topics to Pi, Claude Code, and Codex sessions running in Rex on a Mac.
 - [rex-gascity](https://github.com/docbobo/rex-gascity) ![Stars](https://img.shields.io/github/stars/docbobo/rex-gascity?style=social) - Runs Gas City agents in native Rex panes.
+- [tackroom](https://github.com/yourconscience/tackroom) - Syncs skills, MCP servers and hooks across coding agents, with a Rex workspace for its status and crons.
 
 ## Agent dashboards
 
