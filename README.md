@@ -62,6 +62,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rexia](https://github.com/hackrdotsh/rexia) ![Stars](https://img.shields.io/github/stars/hackrdotsh/rexia?style=social) - Unofficial native Linux client built on GPUI, themed by Noctalia (build from source).
 - [Chompy](https://github.com/jeffarese/chompy) ![Stars](https://img.shields.io/github/stars/jeffarese/chompy?style=social) - Unofficial Android client with an agent board and terminal access across Rex servers.
 - [Rexling M](https://github.com/mikeyobrien/rexling) ![Stars](https://img.shields.io/github/stars/mikeyobrien/rexling?style=social) - Android fork of Rexling with a unified switcher and layouts for phones and foldables.
+- [ColliePWA](https://github.com/AltanS/collie) ![Stars](https://img.shields.io/github/stars/AltanS/collie?style=social) - Self-hosted mobile web app with experimental support for reading and replying to agents in Rex.
 
 ## Coding agents
 
@@ -85,6 +86,11 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [pi-rex-terminal](https://github.com/schpet/pi-rex-terminal) ![Stars](https://img.shields.io/github/stars/schpet/pi-rex-terminal?style=social) - Pi extension that opens your own shell through Rex in the agent's input area. ([demo](https://github.com/schpet/pi-rex-terminal/blob/main/docs/assets/pi-rex-terminal-demo.mp4))
 - [rex-teams](https://github.com/campfireshuffle/rex-teams) ![Stars](https://img.shields.io/github/stars/campfireshuffle/rex-teams?style=social) - Skill that lets agents spawn subagents in Rex tabs and collect their reports. ([demo](https://github.com/campfireshuffle/rex-teams/blob/main/media/hero.webp))
 - [rex-config](https://github.com/johnstegeman/rex-config) ![Stars](https://img.shields.io/github/stars/johnstegeman/rex-config?style=social) - Claims beads and launches agents in new worktree tabs using worktrunk and native prompts.
+- [pi-rex-agents by maxpaulus43](https://github.com/maxpaulus43/pi-rex-agents) ![Stars](https://img.shields.io/github/stars/maxpaulus43/pi-rex-agents?style=social) - Launches named Pi subagents in interactive panes on local or remote Rex hosts.
+- [pi-rex-btw](https://github.com/maxpaulus43/pi-rex-btw) ![Stars](https://img.shields.io/github/stars/maxpaulus43/pi-rex-btw?style=social) - Opens a floating Pi side chat while keeping the main conversation in its pane.
+- [pi-rex-shell](https://github.com/maxpaulus43/pi-rex-shell) ![Stars](https://img.shields.io/github/stars/maxpaulus43/pi-rex-shell?style=social) - Runs background shell jobs in interactive Rex panes and returns their output to Pi.
+- [rex-tg](https://github.com/arrokh/rex-tg) ![Stars](https://img.shields.io/github/stars/arrokh/rex-tg?style=social) - Connects Telegram topics to Pi, Claude Code, and Codex sessions running in Rex on a Mac.
+- [rex-gascity](https://github.com/docbobo/rex-gascity) ![Stars](https://img.shields.io/github/stars/docbobo/rex-gascity?style=social) - Runs Gas City agents in native Rex panes.
 
 ## Agent dashboards
 
@@ -105,6 +111,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [DeckShep](https://github.com/kotler/DeckShep) ![Stars](https://img.shields.io/github/stars/kotler/DeckShep?style=social) - Stream Deck controller for Codex and Claude Code sessions in Rex on macOS.
 - [magi](https://github.com/felitrejos/magi) ![Stars](https://img.shields.io/github/stars/felitrejos/magi?style=social) - Monitors and controls Claude Code and Codex sessions across machines from a Rex pane.
 - [agyscope](https://github.com/daehyeok/agyscope) ![Stars](https://img.shields.io/github/stars/daehyeok/agyscope?style=social) - Floating panel showing Antigravity (`agy`) subagent trees and live transcripts across hosts. ([demo](https://github.com/daehyeok/agyscope/blob/main/docs/demo.gif))
+- [Creator Micro for AI agents](https://github.com/codwats/creator-micro-agents) ![Stars](https://img.shields.io/github/stars/codwats/creator-micro-agents?style=social) - Displays Rex agent status on a Work Louder Creator Micro v1 and jumps to the agent needing attention.
 
 ## Editors
 
@@ -132,6 +139,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex.nvim](https://github.com/rawnly/rex.nvim) ![Stars](https://img.shields.io/github/stars/rawnly/rex.nvim?style=social) - Annotate code in Neovim and send comments to a coding agent in Rex. ([demo](https://github.com/user-attachments/assets/47bc945d-6377-4df5-80a6-93bd219fd1b6))
 - [rex-relay.nvim](https://github.com/crierr/rex-relay.nvim) ![Stars](https://img.shields.io/github/stars/crierr/rex-relay.nvim?style=social) - Sends file:line references and review comments from Neovim to agents in Rex.
 - [Annorex](https://github.com/devararishivian/annorex) ![Stars](https://img.shields.io/github/stars/devararishivian/annorex?style=social) - Annotates Claude Code, Pi, and OpenCode replies and files in a Rex pane and sends the notes back.
+- [Rex Annotation](https://github.com/arrokh/rex-annotation) ![Stars](https://img.shields.io/github/stars/arrokh/rex-annotation?style=social) - Annotates agent replies in Neovim and inserts quoted feedback into the original conversation’s draft.
 
 ## Pickers and navigation
 
@@ -176,6 +184,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-theme-importer](https://github.com/alexrlocke/rex-theme-importer) ![Stars](https://img.shields.io/github/stars/alexrlocke/rex-theme-importer?style=social) - Fzf picker for previewing Ghostty themes and importing them into Rex.
 - [rexeme](https://github.com/DeepanshuMishraa/rexeme) ![Stars](https://img.shields.io/github/stars/DeepanshuMishraa/rexeme?style=social) - Applies Rex's theme to 52 editors, terminals, and CLI tools on macOS.
 - [rex-statusline](https://github.com/kenbanks-peng/rex-statusline) ![Stars](https://img.shields.io/github/stars/kenbanks-peng/rex-statusline?style=social) - Oh My Posh status line shared by Rex terminal splits.
+- [Catppuccin for Rex](https://github.com/Yahddyyp/rex) ![Stars](https://img.shields.io/github/stars/Yahddyyp/rex?style=social) - Provides all four Catppuccin palettes as importable Rex themes.
 
 ## Workflow utilities
 
@@ -192,6 +201,9 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [smart-title-rex](https://github.com/TaterDoge/smart-title-rex) ![Stars](https://img.shields.io/github/stars/TaterDoge/smart-title-rex?style=social) - Renames tabs from the focused terminal's recent output, using an OpenAI-compatible model. ([demo](https://github.com/TaterDoge/smart-title-rex/blob/main/docs/demo.gif))
 - [nu-rex-integration](https://github.com/fdncred/nu-rex-integration) ![Stars](https://img.shields.io/github/stars/fdncred/nu-rex-integration?style=social) - Connects Nushell tables and hooks to Rex pickers, pane status, layouts, and remote commands.
 - [My Rex Plugins](https://github.com/alessaba/rex_plugins) ![Stars](https://img.shields.io/github/stars/alessaba/rex_plugins?style=social) - Lua plugins for Docker shells, shell history, layouts, Python environments, and serial connections.
+- [Milo](https://github.com/mcc0x/milo) ![Stars](https://img.shields.io/github/stars/mcc0x/milo?style=social) - Shows a file tree, Git history, and diffs in Rex panes with per-project layouts.
+- [ha-rex-server](https://github.com/aranw/ha-rex-server) ![Stars](https://img.shields.io/github/stars/aranw/ha-rex-server?style=social) - Runs a Rex terminal server on a Home Assistant machine.
+- [notirex](https://github.com/omenlog/notirex) ![Stars](https://img.shields.io/github/stars/omenlog/notirex?style=social) - Shows native macOS notifications from Rex custom actions without taking keyboard focus.
 
 ## Frameworks
 
@@ -206,6 +218,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 
 - [rex-orbit](https://github.com/benhid/rex-orbit) ![Stars](https://img.shields.io/github/stars/benhid/rex-orbit?style=social) - Your Claude Code agents as pixel bots orbiting a dinosaur. ([demo](https://github.com/benhid/rex-orbit/blob/main/assets/demo-light.png))
 - [pokemon-rex](https://github.com/anthonymq/pokemon-rex) ![Stars](https://img.shields.io/github/stars/anthonymq/pokemon-rex?style=social) - Pokedex sidebar that gives coding agents Pokemon partners and rewards completed tasks with XP.
+- [Buddr](https://github.com/jsyrovy/buddr) ![Stars](https://img.shields.io/github/stars/jsyrovy/buddr?style=social) - Animates a pixel-art desktop pet on macOS to show agent status across local and remote Rex hosts.
 
 ## Official resources
 
