@@ -40,6 +40,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [Raptor](https://github.com/alienxp03/raptor) ![Stars](https://img.shields.io/github/stars/alienxp03/raptor?style=social) - Launcher for macOS that opens Rex sessions, projects, and Git worktrees.
 - [summon](https://github.com/juan294/summon) ![Stars](https://img.shields.io/github/stars/juan294/summon?style=social) - CLI that launches multi-pane project workspaces as Rex sessions, with layout presets.
 - [rex-projects](https://github.com/almonk/rex-projects) ![Stars](https://img.shields.io/github/stars/almonk/rex-projects?style=social) - Opens sessions in projects and existing or new Git worktrees through native pickers.
+- [git-wt](https://github.com/alde/git-wt) ![Stars](https://img.shields.io/github/stars/alde/git-wt?style=social) - Opens Git worktrees in branch tabs grouped into one Rex session per repository.
 
 ## Recovery
 
@@ -63,6 +64,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [Chompy](https://github.com/jeffarese/chompy) ![Stars](https://img.shields.io/github/stars/jeffarese/chompy?style=social) - Unofficial Android client with an agent board and terminal access across Rex servers.
 - [Rexling M](https://github.com/mikeyobrien/rexling) ![Stars](https://img.shields.io/github/stars/mikeyobrien/rexling?style=social) - Android fork of Rexling with a unified switcher and layouts for phones and foldables.
 - [ColliePWA](https://github.com/AltanS/collie) ![Stars](https://img.shields.io/github/stars/AltanS/collie?style=social) - Self-hosted mobile web app with experimental support for reading and replying to agents in Rex.
+- [Chuchu](https://github.com/jossephus/chuchu) ![Stars](https://img.shields.io/github/stars/jossephus/chuchu?style=social) - Android SSH client with a built-in Rex connection for browsing sessions and opening panes over Tailscale.
 
 ## Coding agents
 
@@ -91,6 +93,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [pi-rex-shell](https://github.com/maxpaulus43/pi-rex-shell) ![Stars](https://img.shields.io/github/stars/maxpaulus43/pi-rex-shell?style=social) - Runs background shell jobs in interactive Rex panes and returns their output to Pi.
 - [rex-tg](https://github.com/arrokh/rex-tg) ![Stars](https://img.shields.io/github/stars/arrokh/rex-tg?style=social) - Connects Telegram topics to Pi, Claude Code, and Codex sessions running in Rex on a Mac.
 - [rex-gascity](https://github.com/docbobo/rex-gascity) ![Stars](https://img.shields.io/github/stars/docbobo/rex-gascity?style=social) - Runs Gas City agents in native Rex panes.
+- [Agent Letterbox for Rex](https://github.com/SimonMallas/agent-letterbox-rex) ![Stars](https://img.shields.io/github/stars/SimonMallas/agent-letterbox-rex?style=social) - Delivers local messages between coding agents and alerts recipients in their Rex panes.
 
 ## Agent dashboards
 
@@ -112,6 +115,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [magi](https://github.com/felitrejos/magi) ![Stars](https://img.shields.io/github/stars/felitrejos/magi?style=social) - Monitors and controls Claude Code and Codex sessions across machines from a Rex pane.
 - [agyscope](https://github.com/daehyeok/agyscope) ![Stars](https://img.shields.io/github/stars/daehyeok/agyscope?style=social) - Floating panel showing Antigravity (`agy`) subagent trees and live transcripts across hosts. ([demo](https://github.com/daehyeok/agyscope/blob/main/docs/demo.gif))
 - [Creator Micro for AI agents](https://github.com/codwats/creator-micro-agents) ![Stars](https://img.shields.io/github/stars/codwats/creator-micro-agents?style=social) - Displays Rex agent status on a Work Louder Creator Micro v1 and jumps to the agent needing attention.
+- [Plannotator Inbox](https://github.com/backnotprop/plannotator#plannotator-inbox) - Collects agent questions and files for review and lets you jump to the agent’s Rex pane.
 
 ## Editors
 
@@ -128,6 +132,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [sidekick-rex.nvim](https://github.com/gonstoll/sidekick-rex.nvim) ![Stars](https://img.shields.io/github/stars/gonstoll/sidekick-rex.nvim?style=social) - Lets sidekick.nvim use Rex as its terminal multiplexer backend.
 - [vim-dispatch-extras](https://github.com/trekdemo/vim-dispatch-extras) ![Stars](https://img.shields.io/github/stars/trekdemo/vim-dispatch-extras?style=social) - Rex strategy for [dispatch.vim](https://github.com/tpope/vim-dispatch) that runs `:Make` in a Rex block and loads its output into quickfix.
 - [neopane](https://github.com/spiritledsoftware/neopane) ![Stars](https://img.shields.io/github/stars/spiritledsoftware/neopane?style=social) - Opens Neovim windows as native Rex panes sharing one editor process.
+- [rex-nvim](https://github.com/AlbertoBarrago/rex-nvim) ![Stars](https://img.shields.io/github/stars/AlbertoBarrago/rex-nvim?style=social) - Opens files from Rex links or Finder in the project’s Neovim session inside Rex on macOS.
 
 ## Code review
 
@@ -140,6 +145,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-relay.nvim](https://github.com/crierr/rex-relay.nvim) ![Stars](https://img.shields.io/github/stars/crierr/rex-relay.nvim?style=social) - Sends file:line references and review comments from Neovim to agents in Rex.
 - [Annorex](https://github.com/devararishivian/annorex) ![Stars](https://img.shields.io/github/stars/devararishivian/annorex?style=social) - Annotates Claude Code, Pi, and OpenCode replies and files in a Rex pane and sends the notes back.
 - [Rex Annotation](https://github.com/arrokh/rex-annotation) ![Stars](https://img.shields.io/github/stars/arrokh/rex-annotation?style=social) - Annotates agent replies in Neovim and inserts quoted feedback into the original conversation’s draft.
+- [Plannotator TUI](https://github.com/plannotator/plannotator-tui#rex-annotate) - Reviews Git diffs and documents in Rex and sends annotations to a coding agent.
 
 ## Pickers and navigation
 
@@ -159,6 +165,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-hints](https://github.com/jmayaalv/rex-hints) ![Stars](https://img.shields.io/github/stars/jmayaalv/rex-hints?style=social) - Adds keyboard hints to copy, open, edit, or jump to text in a pane.
 - [rex-thumbs](https://github.com/chaosteil/rex-thumbs) ![Stars](https://img.shields.io/github/stars/chaosteil/rex-thumbs?style=social) - Copies or pastes paths, URLs, and hashes from a pane using letter hints.
 - [RexJump for VibeIsland](https://github.com/mvdevries/rexjump-for-vibeisland) ![Stars](https://img.shields.io/github/stars/mvdevries/rexjump-for-vibeisland?style=social) - Jumps from Vibe Island sessions to their exact Rex panes on macOS.
+- [zop](https://github.com/theherk/zop) ![Stars](https://img.shields.io/github/stars/theherk/zop?style=social) - Supplies a Rex project picker with repositories and directories ranked by zoxide.
 
 ## Previews and media
 
