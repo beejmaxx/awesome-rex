@@ -53,6 +53,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-recover](https://github.com/nexxai/rex-recover) ![Stars](https://img.shields.io/github/stars/nexxai/rex-recover?style=social) - Relaunches monitored commands in their original terminals after a Rex server restart.
 - [rex-agents](https://github.com/oliver-kriska/rex-agents) ![Stars](https://img.shields.io/github/stars/oliver-kriska/rex-agents?style=social) - Restores Claude Code and Amp conversations after restarts and saves projects to reopen later.
 - [rex-resurrect](https://github.com/ekristen/rex-resurrect) ![Stars](https://img.shields.io/github/stars/ekristen/rex-resurrect?style=social) - Resumes Claude Code, Codex, and Copilot CLI conversations in their original panes after restarts.
+- [nvim-osc7577](https://github.com/jeffrom/nvim-osc7577) ![Stars](https://img.shields.io/github/stars/jeffrom/nvim-osc7577?style=social) - Lets Rex resume Neovim sessions through OSC 7577.
 
 ## Clients
 
@@ -65,6 +66,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [Rexling M](https://github.com/mikeyobrien/rexling) ![Stars](https://img.shields.io/github/stars/mikeyobrien/rexling?style=social) - Android fork of Rexling with a unified switcher and layouts for phones and foldables.
 - [ColliePWA](https://github.com/AltanS/collie) ![Stars](https://img.shields.io/github/stars/AltanS/collie?style=social) - Self-hosted mobile web app with experimental support for reading and replying to agents in Rex.
 - [Chuchu](https://github.com/jossephus/chuchu) ![Stars](https://img.shields.io/github/stars/jossephus/chuchu?style=social) - Android SSH client with a built-in Rex connection for browsing sessions and opening panes over Tailscale.
+- [rweb](https://github.com/lexlapax/rweb) ![Stars](https://img.shields.io/github/stars/lexlapax/rweb?style=social) - Web client for viewing and controlling Rex sessions from a phone, tablet, or laptop.
 
 ## Coding agents
 
@@ -94,6 +96,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [rex-tg](https://github.com/arrokh/rex-tg) ![Stars](https://img.shields.io/github/stars/arrokh/rex-tg?style=social) - Connects Telegram topics to Pi, Claude Code, and Codex sessions running in Rex on a Mac.
 - [rex-gascity](https://github.com/docbobo/rex-gascity) ![Stars](https://img.shields.io/github/stars/docbobo/rex-gascity?style=social) - Runs Gas City agents in native Rex panes.
 - [Agent Letterbox for Rex](https://github.com/SimonMallas/agent-letterbox-rex) ![Stars](https://img.shields.io/github/stars/SimonMallas/agent-letterbox-rex?style=social) - Delivers local messages between coding agents and alerts recipients in their Rex panes.
+- [mic-serve](https://github.com/slevin-7/mic-serve) ![Stars](https://img.shields.io/github/stars/slevin-7/mic-serve?style=social) - Forwards Mac microphone audio over SSH for Claude Code dictation in remote Linux Rex sessions.
 
 ## Agent dashboards
 
@@ -133,6 +136,9 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [vim-dispatch-extras](https://github.com/trekdemo/vim-dispatch-extras) ![Stars](https://img.shields.io/github/stars/trekdemo/vim-dispatch-extras?style=social) - Rex strategy for [dispatch.vim](https://github.com/tpope/vim-dispatch) that runs `:Make` in a Rex block and loads its output into quickfix.
 - [neopane](https://github.com/spiritledsoftware/neopane) ![Stars](https://img.shields.io/github/stars/spiritledsoftware/neopane?style=social) - Opens Neovim windows as native Rex panes sharing one editor process.
 - [rex-nvim](https://github.com/AlbertoBarrago/rex-nvim) ![Stars](https://img.shields.io/github/stars/AlbertoBarrago/rex-nvim?style=social) - Opens files from Rex links or Finder in the project’s Neovim session inside Rex on macOS.
+- [gvim](https://github.com/tbxark/gvim) ![Stars](https://img.shields.io/github/stars/tbxark/gvim?style=social) - Terminal editor that opens files and reviews diffs in a floating Rex window.
+- [rex-scry](https://github.com/AlbertoBarrago/rex-scry) ![Stars](https://img.shields.io/github/stars/AlbertoBarrago/rex-scry?style=social) - Collects diagnostics from command output and opens the selected location in Neovim from the Rex command palette.
+- [rex-types](https://github.com/jocades/rex-types) ![Stars](https://img.shields.io/github/stars/jocades/rex-types?style=social) - Adds Lua language server completions, type information, and hover documentation for the Rex Lua API.
 
 ## Code review
 
@@ -211,6 +217,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [Milo](https://github.com/mcc0x/milo) ![Stars](https://img.shields.io/github/stars/mcc0x/milo?style=social) - Shows a file tree, Git history, and diffs in Rex panes with per-project layouts.
 - [ha-rex-server](https://github.com/aranw/ha-rex-server) ![Stars](https://img.shields.io/github/stars/aranw/ha-rex-server?style=social) - Runs a Rex terminal server on a Home Assistant machine.
 - [notirex](https://github.com/omenlog/notirex) ![Stars](https://img.shields.io/github/stars/omenlog/notirex?style=social) - Shows native macOS notifications from Rex custom actions without taking keyboard focus.
+- [tman](https://github.com/kkukshtel/tman) ![Stars](https://img.shields.io/github/stars/kkukshtel/tman?style=social) - Runs tasks from VS Code `tasks.json` files in floating Rex panes.
 
 ## Frameworks
 
