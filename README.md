@@ -218,6 +218,7 @@ A curated list of public tools, plugins, and integrations for Rex, the terminal 
 - [ha-rex-server](https://github.com/aranw/ha-rex-server) ![Stars](https://img.shields.io/github/stars/aranw/ha-rex-server?style=social) - Runs a Rex terminal server on a Home Assistant machine.
 - [notirex](https://github.com/omenlog/notirex) ![Stars](https://img.shields.io/github/stars/omenlog/notirex?style=social) - Shows native macOS notifications from Rex custom actions without taking keyboard focus.
 - [tman](https://github.com/kkukshtel/tman) ![Stars](https://img.shields.io/github/stars/kkukshtel/tman?style=social) - Runs tasks from VS Code `tasks.json` files in floating Rex panes.
+- [rexpresence](https://github.com/Luqueee/rexpresence) - Shows your active Rex tool and session group on your Discord profile, with pause and per-group privacy controls.
 
 ## Frameworks
 
